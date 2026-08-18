@@ -14,6 +14,7 @@
 | [🎓 certificaciones/](./certificaciones/) | Certificaciones y cursos completados |
 | [🚀 proyectos/](./proyectos/) | Proyectos destacados donde apliqué mis skills |
 | [🌍 idiomas/](./idiomas/) | Idiomas y nivel de dominio |
+| [🧠 kiro-skills/](./kiro-skills/) | **29 skills de IA** — prompts y sistemas reutilizables para Kiro/Claude |
 | [📝 templates/](./templates/) | Plantillas para agregar nuevas skills |
 
 ---
@@ -62,6 +63,7 @@ cp templates/proyecto-template.md proyectos/mi-proyecto.md
 - **Certificaciones:** 0
 - **Proyectos:** 1
 - **Idiomas:** 1
+- **🧠 Kiro Skills (IA):** 29 (361 archivos)
 
 ---
 
