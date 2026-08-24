@@ -1,6 +1,6 @@
 # 🧠 Mis Skills
 
-> Repositorio personal para documentar y organizar todas mis habilidades profesionales.
+> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 86 skills de IA.
 
 ---
 
@@ -8,25 +8,37 @@
 
 | Carpeta | Descripción |
 |---------|-------------|
-| [📐 tecnicas/](./tecnicas/) | Habilidades técnicas (programación, diseño, análisis, etc.) |
-| [🤝 blandas/](./blandas/) | Habilidades blandas (comunicación, liderazgo, trabajo en equipo, etc.) |
+| [📐 tecnicas/](./tecnicas/) | Habilidades técnicas (programación, diseño, análisis) |
+| [🤝 blandas/](./blandas/) | Habilidades blandas (comunicación, liderazgo, equipo) |
 | [🔧 herramientas/](./herramientas/) | Herramientas y software que domino |
 | [🎓 certificaciones/](./certificaciones/) | Certificaciones y cursos completados |
 | [🚀 proyectos/](./proyectos/) | Proyectos destacados donde apliqué mis skills |
 | [🌍 idiomas/](./idiomas/) | Idiomas y nivel de dominio |
-| [🧠 kiro-skills/](./kiro-skills/) | **29 skills de IA propias** — prompts y sistemas reutilizables para Kiro/Claude |
-| [🧰 kiro-skills/agent-skills-addyosmani/](./kiro-skills/agent-skills-addyosmani/) | **24 skills de Addy Osmani** — best practices de desarrollo profesional |
-| [🏭 kiro-skills/gstack-garrytan/](./kiro-skills/gstack-garrytan/) | **33 skills de Garry Tan (YC)** — fábrica de software: CEO, Eng, Design, QA, Ship |
+| [🧠 kiro-skills/](./kiro-skills/) | **86 skills de IA** organizadas en 11 segmentos |
 | [📝 templates/](./templates/) | Plantillas para agregar nuevas skills |
 
 ---
 
-## 🎯 ¿Cómo usar este repositorio?
+## 🧠 Kiro Skills — 86 skills en 11 segmentos
 
-1. **Explorar** las carpetas por categoría
-2. **Agregar** nuevas skills usando las [plantillas](./templates/)
-3. **Actualizar** el nivel de dominio conforme avanzas
-4. **Compartir** tu perfil profesional con reclutadores o equipos
+| # | Segmento | Skills | Para qué |
+|---|----------|--------|----------|
+| 01 | 🧠 [Estrategia](./kiro-skills/01-estrategia/) | 15 | Pensar, planificar, especificar |
+| 02 | 🚀 [Ejecución](./kiro-skills/02-ejecucion/) | 14 | Modos de trabajo: rápido, simple, cuidadoso |
+| 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 15 | UI/UX, marca, animaciones |
+| 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 7 | Reviews, simplificación |
+| 05 | 🧪 [Testing y QA](./kiro-skills/05-testing-qa/) | 10 | Tests, debugging, performance |
+| 06 | 🛡️ [Seguridad](./kiro-skills/06-seguridad/) | 5 | Auditorías, hardening |
+| 07 | 🚀 [Deploy y Ship](./kiro-skills/07-deploy-ship/) | 7 | CI/CD, releases |
+| 08 | 🤖 [Automatización](./kiro-skills/08-automatizacion/) | 3 | Browser automation, scraping |
+| 09 | 📝 [Documentación](./kiro-skills/09-documentacion/) | 6 | Docs, ADRs, diagramas |
+| 10 | 🛠️ [Utilidades](./kiro-skills/10-utilidades/) | 5 | Meta-skills, APIs |
+| 11 | 🧬 [Producto](./kiro-skills/11-producto/) | 1 | Específico de negocio |
+
+### 📚 Guías rápidas:
+- [⚡ COMANDOS](./kiro-skills/COMANDOS.md) — Qué decirle al agente para activar cada skill
+- [🔥 COMBINACIONES](./kiro-skills/COMBINACIONES.md) — Los mejores combos por situación
+- [📖 GUÍA COMPLETA](./kiro-skills/GUIA_COMPLETA.md) — Descripción detallada de cada skill
 
 ---
 
@@ -41,36 +53,33 @@
 
 ---
 
-## 🚀 Inicio Rápido
-
-```bash
-# Agregar una nueva skill técnica
-cp templates/skill-template.md tecnicas/mi-nueva-skill.md
-
-# Agregar una certificación
-cp templates/certificacion-template.md certificaciones/mi-certificacion.md
-
-# Agregar un proyecto
-cp templates/proyecto-template.md proyectos/mi-proyecto.md
-```
-
----
-
 ## 📈 Resumen
 
-<!-- Actualiza estos números conforme agregues skills -->
 - **Skills técnicas:** 2
 - **Skills blandas:** 2
 - **Herramientas:** 2
 - **Certificaciones:** 0
 - **Proyectos:** 1
 - **Idiomas:** 1
-- **🧠 Kiro Skills (propias):** 29 (361 archivos)
-- **🧰 Agent Skills (Addy Osmani):** 24 (83 archivos)
-- **🏭 gstack (Garry Tan / YC):** 33 (373 archivos)
+- **🧠 Kiro Skills (IA):** 86 (757 archivos, 11 segmentos, 3 fuentes)
+
+---
+
+## 🚀 Inicio Rápido
+
+```bash
+# Agregar una nueva skill técnica
+cp templates/skill-template.md tecnicas/mi-nueva-skill.md
+
+# Instalar skills de IA en otro proyecto
+cp -r kiro-skills/02-ejecucion/gsd/ mi-proyecto/.kiro/skills/
+
+# Instalar un segmento completo
+cp -r kiro-skills/06-seguridad/* mi-proyecto/.kiro/skills/
+```
 
 ---
 
 ## 📄 Licencia
 
-Este repositorio es personal. Siéntete libre de usarlo como plantilla para crear el tuyo.
+Este repositorio es personal. Skills de terceros bajo MIT (ver cada fuente).
