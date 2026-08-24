@@ -16,6 +16,7 @@
 | [🌍 idiomas/](./idiomas/) | Idiomas y nivel de dominio |
 | [🧠 kiro-skills/](./kiro-skills/) | **29 skills de IA propias** — prompts y sistemas reutilizables para Kiro/Claude |
 | [🧰 kiro-skills/agent-skills-addyosmani/](./kiro-skills/agent-skills-addyosmani/) | **24 skills de Addy Osmani** — best practices de desarrollo profesional |
+| [🏭 kiro-skills/gstack-garrytan/](./kiro-skills/gstack-garrytan/) | **33 skills de Garry Tan (YC)** — fábrica de software: CEO, Eng, Design, QA, Ship |
 | [📝 templates/](./templates/) | Plantillas para agregar nuevas skills |
 
 ---
@@ -66,6 +67,7 @@ cp templates/proyecto-template.md proyectos/mi-proyecto.md
 - **Idiomas:** 1
 - **🧠 Kiro Skills (propias):** 29 (361 archivos)
 - **🧰 Agent Skills (Addy Osmani):** 24 (83 archivos)
+- **🏭 gstack (Garry Tan / YC):** 33 (373 archivos)
 
 ---
 
