@@ -22,6 +22,7 @@
 | 9 | 🧬 **CV** | `[pegar texto de CV]` | Generar ADN Digital |
 | 10 | 🔬 **SINERGIA** | `"Sinergia"` | Verificar que todo está conectado |
 | 11 | 🌐 **NAVEGAR** | `"Navegá [URL]"` | Abrir browser, ver página, interactuar |
+| 12 | 🔬 **CLONAR** | `"CLONAR [url]"` | Clonar sitio: fiel (fuente real) o recrear (Next.js) |
 
 ---
 
@@ -42,6 +43,7 @@
 | 9 | 💎 **COMPLETO** | Office hours → Impeccable → Hacelo → Ultra review → Security → Ship it |
 | 10 | 📣 **COMUNICAR** | Ship it → Marketing brief → Posts redes → Blog post |
 | 11 | 🌐 **TESTEAR LIVE** | Navegá [URL] → Snapshot → Verificar elementos → Reportar bugs |
+| 12 | 🔬 **CLONAR** | CLONAR [url] → Recon → Elegir modo (Fiel/Recrear) → Build → QA visual |
 
 ### Cómo funciona una cadena:
 

@@ -1,4 +1,4 @@
-# ⚡ Comandos Rápidos — Referencia de las 86 Skills
+# ⚡ Comandos Rápidos — Referencia de las 89 Skills
 
 > Copia y pega el comando exacto cuando trabajes con Kiro o cualquier agente IA.  
 > Organizado por segmento. Cada skill tiene: trigger, qué le decís, y cuándo usarla.
@@ -16,7 +16,7 @@
 | 05 | [Testing y QA](#05--testing-y-qa) | 10 | Tests, debugging, performance |
 | 06 | [Seguridad](#06--seguridad) | 5 | Hardening, auditorías, protección |
 | 07 | [Deploy y Ship](#07--deploy-y-ship) | 7 | CI/CD, releases, deployment |
-| 08 | [Automatización](#08--automatización) | 3 | Browser automation, scraping |
+| 08 | [Automatización](#08--automatización) | 6 | Browser automation, scraping, clonación web |
 | 09 | [Documentación](#09--documentación) | 6 | Docs, ADRs, diagramas |
 | 10 | [Utilidades](#10--utilidades) | 5 | Meta-skills, APIs, memoria |
 | 11 | [Producto](#11--producto) | 1 | Específico de Sistema Ómicron |
@@ -161,13 +161,16 @@
 
 ## 08 — AUTOMATIZACIÓN
 
-> 🤖 Browser automation, web scraping, workflows.
+> 🤖 Browser automation, web scraping, clonación, workflows.
 
 | # | Skill | Comando / Trigger | Cuándo usar |
 |---|-------|-------------------|-------------|
 | 1 | **Nova Act** | `"Automatizá [acción] en [sitio]"` / `"Scrapeá datos"` | SDK Amazon: automation con IA, testing E2E |
 | 2 | **Browse** | `"Navegá a [URL]"` / `"Abrí en browser"` | Navegación web automatizada para research |
 | 3 | **Scrape** | `"Scrape [sitio]"` / `"Extraé datos de..."` | Web scraping estructurado |
+| 4 | **AI Website Cloner** | `"Clone website"` / `"Pixel-perfect clone"` | Reconstruir sitio en Next.js moderno con builders AI |
+| 5 | **Web Clone (Fiel)** | `"Clonar fielmente"` / `"Mirror site"` | Extraer código fuente real, sin alucinaciones IA |
+| 6 | **CLONAR** ⚡ | `"CLONAR [url]"` / `"Cloná este sitio"` | **COMBO**: Fiel (fuente real) o Recrear (Next.js moderno) |
 
 ---
 
