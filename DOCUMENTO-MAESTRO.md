@@ -23,6 +23,7 @@
 | 10 | 🔬 **SINERGIA** | `"Sinergia"` | Verificar que todo está conectado |
 | 11 | 🌐 **NAVEGAR** | `"Navegá [URL]"` | Abrir browser, ver página, interactuar |
 | 12 | 🔬 **CLONAR** | `"CLONAR [url]"` | Clonar sitio: fiel (fuente real) o recrear (Next.js) |
+| 13 | ⚡ **AUTOMATIZAR** | `"AUTOMATIZAR [tarea]"` | Power Suite: extraer, llenar, monitorear, grabar, clonar, ejecutar, generar, pipeline |
 
 ---
 
@@ -44,6 +45,7 @@
 | 10 | 📣 **COMUNICAR** | Ship it → Marketing brief → Posts redes → Blog post |
 | 11 | 🌐 **TESTEAR LIVE** | Navegá [URL] → Snapshot → Verificar elementos → Reportar bugs |
 | 12 | 🔬 **CLONAR** | CLONAR [url] → Recon → Elegir modo (Fiel/Recrear) → Build → QA visual |
+| 13 | ⚡ **PIPELINE WEB** | EXTRAER [datos] → EJECUTAR [analisis en sandbox] → GENERAR [reporte HTML] |
 
 ### Cómo funciona una cadena:
 
@@ -222,10 +224,15 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Canary | Deploy gradual |
 | Finishing Branch | Integrar trabajo completado |
 
-### 08 — Automatización (8)
+### 08 — Automatización (12)
 
 | Skill | Qué hace |
 |-------|----------|
+| **AUTOMATIZAR-WEB** | **POWER SUITE: 4 skills + 8 capacidades combinadas** |
+| Agent-Browser | CLI browser automation (navegar, click, extraer, grabar) |
+| Clonar | Replicar sitios (FIEL o RECREAR en Next.js) |
+| MicroSandbox | Ejecutar código en microVMs aisladas (hardware virtualization) |
+| HTML-Anything | Generar HTML profesional (75 skills × 9 superficies) |
 | Nova Act | Browser automation con IA |
 | Browse | Navegación web automatizada |
 | Scrape | Web scraping |
@@ -233,7 +240,6 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Firecrawl Scrape | 1 página → Markdown |
 | Firecrawl Search | Buscar web + contenido |
 | Firecrawl Interact | Clicks, forms, login |
-| Firecrawl Onboarding | Setup API key |
 
 ### 09 — Documentación (6)
 
