@@ -11,7 +11,7 @@
 |---|----------|--------|----------|
 | 01 | [Estrategia](#01--estrategia) | 15 | Pensar, planificar, especificar |
 | 02 | [Ejecución](#02--ejecución) | 14 | Modos de trabajo y productividad |
-| 03 | [Diseño](#03--diseño) | 15 | UI/UX, marca, visual |
+| 03 | [Diseño](#03--diseño) | 16 | UI/UX, marca, visual |
 | 04 | [Código y Calidad](#04--código-y-calidad) | 7 | Reviews y simplificación |
 | 05 | [Testing y QA](#05--testing-y-qa) | 10 | Tests, debugging, performance |
 | 06 | [Seguridad](#06--seguridad) | 5 | Hardening, auditorías, protección |
@@ -91,6 +91,7 @@
 | 13 | **Design Consultation** | `"Consultá diseño para..."` / `"Design system from scratch"` | Research landscape + propuesta completa |
 | 14 | **Design Review (gstack)** | `"Revisá el diseño de esta implementación"` | Auditoría de diseño sobre código existente |
 | 15 | **Design Shotgun** | `"Dame variantes de diseño"` / `"Múltiples opciones"` | Genera varias opciones rápidas para comparar |
+| 16 | **Obra Maestra** (combo) | `"OBRA MAESTRA [qué diseñar]"` / `"Diseño pro"` | 🏆 Combo potenciado: taste + pro-max + impeccable + animate en 1 pipeline |
 
 ---
 

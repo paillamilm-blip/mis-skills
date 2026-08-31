@@ -24,6 +24,7 @@
 | 13 | [API nueva](#13--api-nueva) | 5 skills | 🔌 Backend |
 | 14 | [Limpieza de código](#14--limpieza-de-código) | 5 skills | 🧹 Clean |
 | 15 | [Sprint completo (1 semana)](#15--sprint-completo-1-semana) | 10 skills | 🏆 Full |
+| 16 | [Diseño potenciado (OBRA MAESTRA)](#16--diseño-potenciado-obra-maestra) | 4 skills | 🏆 Épico |
 
 ---
 
@@ -368,6 +369,38 @@ Viernes PM:  "Retro: qué aprendimos esta semana?"
 
 ---
 
+## 16 — Diseño potenciado (OBRA MAESTRA)
+
+> **Situación:** Necesitás una UI que se vea, se sienta y se mueva como diseño de verdad, no como output de IA. El combo de diseño más potente del repo.
+
+```
+Taste Skill → UI/UX Pro Max → Impeccable → Animate
+(1 solo comando: OBRA MAESTRA)
+```
+
+**Las 4 fases encadenadas:**
+```
+1. LEER LA SALA   → design read en 1 línea + 3 dials + elegir sistema      (taste-skill)
+2. INTELIGENCIA   → --design-system con los dials como flags + deep-dives  (ui-ux-pro-max)
+3. EJECUTAR+REF   → modo + comando + verificación ACOTADA                  (impeccable)
+4. DARLE VIDA     → gate → propósito → tool más barato → transform+opacity (animate)
+```
+
+**Comando único:**
+```
+"OBRA MAESTRA landing para [producto]"
+"OBRA MAESTRA rediseñá el dashboard de mi app"
+"OBRA MAESTRA un componente [X] premium"
+```
+
+**Por qué es distinto:** no es concatenar las 4 skills, es potenciarlas. El output de cada fase alimenta la siguiente (el design read elige el modo de impeccable, los dials calibran los flags de pro-max, el tier de motion define el presupuesto de animate) y la barra de calidad audita que ninguna dejó un default de IA (púrpura-AI, Inter, `scale(0)`, `transition: all`, CTAs duplicados, etc.).
+
+**Cuándo:** Landing anti-slop nivel award, rediseño de app/dashboard, portfolio, componente premium, o cualquier tarea donde el resultado tiene que verse impecable.
+
+Skill completa: `kiro-skills/03-diseno/obra-maestra/SKILL.md`
+
+---
+
 ## 🎯 Mapa de decisión rápida
 
 ```
@@ -376,7 +409,7 @@ Viernes PM:  "Retro: qué aprendimos esta semana?"
 ├── 💡 PENSAR ──────── Office Hours → Autoplan
 ├── ⚡ HACER RÁPIDO ── GSD + Ponytail
 ├── 🏗️ CONSTRUIR ───── Context Mode → Spec → GSD → Ship
-├── 🎨 DISEÑAR ─────── Taste + Impeccable + Animate
+├── 🎨 DISEÑAR ─────── OBRA MAESTRA (Taste + Pro Max + Impeccable + Animate)
 ├── 🔍 REVISAR ─────── Code Review Ultra + CSO
 ├── 🧪 TESTEAR ─────── QA (browser) + QA Skill (errores)
 ├── 🐛 DEBUGGEAR ───── Investigate + Superpowers
