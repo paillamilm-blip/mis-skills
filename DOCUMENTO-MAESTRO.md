@@ -1,7 +1,7 @@
 # 🧠 DOCUMENTO MAESTRO — Mis Skills + Combos + Cadenas
 
 > Todo lo que necesitás para trabajar con Kiro en una sola página.  
-> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 112 skills en 12 segmentos
+> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 113 skills en 12 segmentos
 
 ---
 
@@ -111,7 +111,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 
 ---
 
-## 📚 BIBLIOTECA COMPLETA (112 skills en 12 segmentos)
+## 📚 BIBLIOTECA COMPLETA (113 skills en 12 segmentos)
 
 > Guardadas en github.com/paillamilm-blip/mis-skills  
 > Copiás la que necesitás, la usás, la sacás.  
@@ -226,7 +226,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Canary | Deploy gradual |
 | Finishing Branch | Integrar trabajo completado |
 
-### 08 — Automatización (11)
+### 08 — Automatización (12)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -242,6 +242,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Firecrawl Scrape | 1 página → Markdown |
 | Firecrawl Search | Buscar web + contenido |
 | Firecrawl Interact | Clicks, forms, login |
+| **ScrapeGraph-AI** | Scraping con IA en Python: describís qué querés → JSON estructurado (sin selectores). 8 pipelines |
 
 ### 09 — Documentación (6)
 
@@ -308,6 +309,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Propias | — | 16 |
 | AlemTuzlak (marketing) | 39 | 11 |
 | usestrix/strix (pentesting IA) | — | 1 (9 sub-skills) |
+| ScrapeGraphAI (scraping IA) | — | 1 |
 
 ---
 
