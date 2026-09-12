@@ -1,7 +1,7 @@
 # 🧠 DOCUMENTO MAESTRO — Mis Skills + Combos + Cadenas
 
 > Todo lo que necesitás para trabajar con Kiro en una sola página.  
-> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 111 skills en 12 segmentos
+> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 112 skills en 12 segmentos
 
 ---
 
@@ -111,7 +111,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 
 ---
 
-## 📚 BIBLIOTECA COMPLETA (111 skills en 12 segmentos)
+## 📚 BIBLIOTECA COMPLETA (112 skills en 12 segmentos)
 
 > Guardadas en github.com/paillamilm-blip/mis-skills  
 > Copiás la que necesitás, la usás, la sacás.  
@@ -202,7 +202,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Verification Before Completion | Verificar antes de "listo" |
 | Systematic Debugging | Método obra (276K⭐) |
 
-### 06 — Seguridad (5)
+### 06 — Seguridad (6)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -211,6 +211,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Guard | Previene cambios peligrosos |
 | Freeze | Congelar deploys |
 | Unfreeze | Descongelar |
+| **Strix** | Pentesting autónomo con IA — 9 sub-skills (pentest, OWASP Top 10, autofix, CI). Valida con PoC real |
 
 ### 07 — Deploy y Ship (8)
 
@@ -306,6 +307,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | LeanKG | 212 | 1 |
 | Propias | — | 16 |
 | AlemTuzlak (marketing) | 39 | 11 |
+| usestrix/strix (pentesting IA) | — | 1 (9 sub-skills) |
 
 ---
 

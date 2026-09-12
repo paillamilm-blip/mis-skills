@@ -1,6 +1,6 @@
 # 🧠 Mis Skills
 
-> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 111 skills de IA.
+> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 112 skills de IA.
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🧠 Kiro Skills — 111 skills en 12 segmentos
+## 🧠 Kiro Skills — 112 skills en 12 segmentos
 
 > Conteo oficial: cada **skill** = una carpeta de nivel superior dentro de un segmento
 > (la unidad que copias/instalas). Recuento reproducible con
@@ -32,7 +32,7 @@
 | 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 16 | UI/UX, marca, animaciones |
 | 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 8 | Reviews, simplificación |
 | 05 | 🧪 [Testing y QA](./kiro-skills/05-testing-qa/) | 12 | Tests, debugging, performance |
-| 06 | 🛡️ [Seguridad](./kiro-skills/06-seguridad/) | 5 | Auditorías, hardening |
+| 06 | 🛡️ [Seguridad](./kiro-skills/06-seguridad/) | 6 | Auditorías, hardening, pentesting IA (Strix) |
 | 07 | 🚀 [Deploy y Ship](./kiro-skills/07-deploy-ship/) | 8 | CI/CD, releases |
 | 08 | 🤖 [Automatización](./kiro-skills/08-automatizacion/) | 11 | Browser automation, scraping, clonar |
 | 09 | 📝 [Documentación](./kiro-skills/09-documentacion/) | 6 | Docs, ADRs, diagramas |
@@ -66,7 +66,7 @@
 - **Certificaciones:** 0
 - **Proyectos:** 1
 - **Idiomas:** 1
-- **🧠 Kiro Skills (IA):** 111 (903 archivos, 12 segmentos, 14 fuentes)
+- **🧠 Kiro Skills (IA):** 112 (12 segmentos, 15 fuentes)
 
 ---
 
