@@ -1,7 +1,7 @@
 # 🧠 DOCUMENTO MAESTRO — Mis Skills + Combos + Cadenas
 
 > Todo lo que necesitás para trabajar con Kiro en una sola página.  
-> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 113 skills en 12 segmentos
+> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 114 skills en 12 segmentos
 
 ---
 
@@ -111,7 +111,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 
 ---
 
-## 📚 BIBLIOTECA COMPLETA (113 skills en 12 segmentos)
+## 📚 BIBLIOTECA COMPLETA (114 skills en 12 segmentos)
 
 > Guardadas en github.com/paillamilm-blip/mis-skills  
 > Copiás la que necesitás, la usás, la sacás.  
@@ -226,7 +226,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Canary | Deploy gradual |
 | Finishing Branch | Integrar trabajo completado |
 
-### 08 — Automatización (12)
+### 08 — Automatización (13)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -243,6 +243,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Firecrawl Search | Buscar web + contenido |
 | Firecrawl Interact | Clicks, forms, login |
 | **ScrapeGraph-AI** | Scraping con IA en Python: describís qué querés → JSON estructurado (sin selectores). 8 pipelines |
+| **Agent Reach** | Ojos de internet: leer/buscar en 15 plataformas (web, YouTube, Reddit, Twitter, GitHub, RSS…) con un CLI, sin APIs de pago |
 
 ### 09 — Documentación (6)
 
@@ -310,6 +311,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | AlemTuzlak (marketing) | 39 | 11 |
 | usestrix/strix (pentesting IA) | — | 1 (9 sub-skills) |
 | ScrapeGraphAI (scraping IA) | — | 1 |
+| Agent Reach (Panniantong) | — | 1 |
 
 ---
 
