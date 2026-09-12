@@ -1,6 +1,6 @@
 # 🧠 Mis Skills
 
-> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 86 skills de IA.
+> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 111 skills de IA.
 
 ---
 
@@ -19,21 +19,26 @@
 
 ---
 
-## 🧠 Kiro Skills — 86 skills en 11 segmentos
+## 🧠 Kiro Skills — 111 skills en 12 segmentos
+
+> Conteo oficial: cada **skill** = una carpeta de nivel superior dentro de un segmento
+> (la unidad que copias/instalas). Recuento reproducible con
+> [`scripts/contar-skills.sh`](./scripts/contar-skills.sh).
 
 | # | Segmento | Skills | Para qué |
 |---|----------|--------|----------|
-| 01 | 🧠 [Estrategia](./kiro-skills/01-estrategia/) | 15 | Pensar, planificar, especificar |
-| 02 | 🚀 [Ejecución](./kiro-skills/02-ejecucion/) | 14 | Modos de trabajo: rápido, simple, cuidadoso |
-| 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 15 | UI/UX, marca, animaciones |
-| 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 7 | Reviews, simplificación |
-| 05 | 🧪 [Testing y QA](./kiro-skills/05-testing-qa/) | 10 | Tests, debugging, performance |
+| 01 | 🧠 [Estrategia](./kiro-skills/01-estrategia/) | 14 | Pensar, planificar, especificar |
+| 02 | 🚀 [Ejecución](./kiro-skills/02-ejecucion/) | 15 | Modos de trabajo: rápido, simple, cuidadoso |
+| 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 16 | UI/UX, marca, animaciones |
+| 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 8 | Reviews, simplificación |
+| 05 | 🧪 [Testing y QA](./kiro-skills/05-testing-qa/) | 12 | Tests, debugging, performance |
 | 06 | 🛡️ [Seguridad](./kiro-skills/06-seguridad/) | 5 | Auditorías, hardening |
-| 07 | 🚀 [Deploy y Ship](./kiro-skills/07-deploy-ship/) | 7 | CI/CD, releases |
-| 08 | 🤖 [Automatización](./kiro-skills/08-automatizacion/) | 3 | Browser automation, scraping |
+| 07 | 🚀 [Deploy y Ship](./kiro-skills/07-deploy-ship/) | 8 | CI/CD, releases |
+| 08 | 🤖 [Automatización](./kiro-skills/08-automatizacion/) | 11 | Browser automation, scraping, clonar |
 | 09 | 📝 [Documentación](./kiro-skills/09-documentacion/) | 6 | Docs, ADRs, diagramas |
-| 10 | 🛠️ [Utilidades](./kiro-skills/10-utilidades/) | 5 | Meta-skills, APIs |
+| 10 | 🛠️ [Utilidades](./kiro-skills/10-utilidades/) | 4 | Meta-skills, APIs |
 | 11 | 🧬 [Producto](./kiro-skills/11-producto/) | 1 | Específico de negocio |
+| 12 | 📣 [Marketing y Content](./kiro-skills/12-marketing-content/) | 11 | Briefs, blog, social, PRD |
 
 ### 📚 Guías rápidas:
 - [⚡ COMANDOS](./kiro-skills/COMANDOS.md) — Qué decirle al agente para activar cada skill
@@ -61,7 +66,7 @@
 - **Certificaciones:** 0
 - **Proyectos:** 1
 - **Idiomas:** 1
-- **🧠 Kiro Skills (IA):** 86 (757 archivos, 11 segmentos, 3 fuentes)
+- **🧠 Kiro Skills (IA):** 111 (903 archivos, 12 segmentos, 14 fuentes)
 
 ---
 
