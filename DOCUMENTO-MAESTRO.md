@@ -1,7 +1,7 @@
 # 🧠 DOCUMENTO MAESTRO — Mis Skills + Combos + Cadenas
 
 > Todo lo que necesitás para trabajar con Kiro en una sola página.  
-> Autor: paillamilm-blip | Última actualización: Agosto 2026
+> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 111 skills en 12 segmentos
 
 ---
 
@@ -111,12 +111,13 @@ Kiro: [paso 2] → te muestra resultado → esperás
 
 ---
 
-## 📚 BIBLIOTECA COMPLETA (103 skills en 12 segmentos)
+## 📚 BIBLIOTECA COMPLETA (111 skills en 12 segmentos)
 
 > Guardadas en github.com/paillamilm-blip/mis-skills  
-> Copiás la que necesitás, la usás, la sacás.
+> Copiás la que necesitás, la usás, la sacás.  
+> Conteo oficial = carpetas de skill de nivel superior. Recuento: `scripts/contar-skills.sh`.
 
-### 01 — Estrategia (13)
+### 01 — Estrategia (14)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -134,7 +135,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Interview Me | Preguntas hasta entender bien |
 | Doubt-Driven Dev | Verificación adversarial |
 
-### 02 — Ejecución (12)
+### 02 — Ejecución (15)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -151,7 +152,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Context Save | Guardar sesión |
 | Context Restore | Recuperar sesión |
 
-### 03 — Diseño (15)
+### 03 — Diseño (16)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -224,7 +225,7 @@ Kiro: [paso 2] → te muestra resultado → esperás
 | Canary | Deploy gradual |
 | Finishing Branch | Integrar trabajo completado |
 
-### 08 — Automatización (12)
+### 08 — Automatización (11)
 
 | Skill | Qué hace |
 |-------|----------|
