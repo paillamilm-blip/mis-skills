@@ -26,10 +26,9 @@
 | 4 | 🐛 **CAZA-BUGS** | loop ⟳ | Investigate → Superpowers → fix → QA → *si falla* ⟳ | **90** |
 | 5 | 🛡️ **CONTROL** | loop ⟳ | Buscar fallas con Strix → arreglar la más grave → re-escanear → repetir hasta que no queden graves | **89** |
 | 6 | ⚡ **CERO DEFECTOS** | loop ⟳ | Hacer rápido y simple → autoverificar que quedó completo → corregir → repetir hasta que está OK | **88** |
-| 7 | 🧪 **TDD** | loop ⟳ | Escribir la prueba (falla) → código para que pase → limpiar → repetir con la siguiente parte | **86** |
-| 8 | 🚀 **LANZAR** | combo | Revisar a fondo → chequear seguridad → checklist de release → publicar → verificar en producción | **85** |
-| 9 | 📊 **PIPELINE DE DATOS** | combo | Sacar datos de una web → procesarlos en entorno seguro → armar informe visual | **84** |
-| 10 | 🧹 **LIMPIAR** | loop ⟳ | Ponytail Audit (escanear bloat) → Code Simplification → Ponytail Review → *si queda deuda* ⟳ → Retro | **83** |
+| 7 | 🚀 **PUBLICAR** | combo | Revisar a fondo → chequear seguridad → checklist de release → publicar → verificar en producción | **85** |
+| 8 | 📊 **REPORTE WEB** | combo | Sacar datos de una web → procesarlos en entorno seguro → armar informe visual | **84** |
+| 9 | 🧹 **LIMPIAR** | loop ⟳ | Ponytail Audit (escanear bloat) → Code Simplification → Ponytail Review → *si queda deuda* ⟳ → Retro | **83** |
 
 ---
 
@@ -72,14 +71,14 @@ Strix (busca fallas) → ordenar por gravedad → arreglar → Strix (revisa de 
 ```
 **Comando:** `"Loop de pentest sobre [proyecto] hasta cerrar las fallas graves"` · ⚠️ solo sobre proyectos tuyos.
 
-### 6 — 📊 PIPELINE DE DATOS (combo · 84) 🆕
+### 6 — 📊 REPORTE WEB (combo · 84) 🆕
 > De una web a un informe, automático: sacar → procesar → reportar.
 ```
 ScrapeGraph (saca los datos de la web)
   → microsandbox (los procesa en un entorno aislado, sin tocar tu máquina)
   → html-anything (arma un informe visual listo para leer)
 ```
-**Comando:** `"PIPELINE: sacá [datos] de [web], procesalos y hacé un reporte"`.
+**Comando:** `"REPORTE WEB: sacá [datos] de [web], procesalos y hacé un informe"`.
 
 ### 7 — 🧹 LIMPIAR (loop ⟳ · 83)
 > Ataca la deuda técnica en ciclo: sacar lo que sobra hasta dejar el código limpio.
@@ -98,7 +97,7 @@ Ponytail Audit (escanea bloat) → Code Simplification → Ponytail Review
 | 1 | **HACER** | `"Hacelo: [tarea]"` | 80% de las tareas |
 | 2 | **INVESTIGAR** | `"Investigá [tema] y resumí"` | Antes de decidir/construir |
 | 3 | **OBRA MAESTRA** | `"OBRA MAESTRA [pantalla]"` | UI que tiene que verse pro |
-| 4 | **REVISAR+LANZAR** | `"Ultra review y ship it"` | Cerrar PR con calidad |
+| 4 | **REVISAR+PUBLICAR** | `"Ultra review y ship it"` | Cerrar PR con calidad |
 | 5 | **CAZA-BUGS** | `"Investigá y arreglá [error]"` | Bug difícil |
 
 ---
@@ -115,9 +114,9 @@ Ponytail Audit (escanea bloat) → Code Simplification → Ponytail Review
 ├── 🎨 DISEÑAR ───────── OBRA MAESTRA
 ├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
 ├── 🛡️ ASEGURAR ──────── CONTROL ⟳
-├── 📊 DATOS ─────────── PIPELINE DE DATOS
+├── 📊 DATOS ─────────── REPORTE WEB
 ├── 🧹 LIMPIAR ───────── LIMPIAR ⟳
-└── 🚀 DEPLOYAR ──────── LANZAR
+└── 🚀 PUBLICAR ──────── revisar → seguridad → publicar → verificar
 ```
 
 ---
