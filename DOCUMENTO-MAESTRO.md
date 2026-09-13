@@ -19,7 +19,7 @@
 
 ---
 
-### 🥇 TABLA MAESTRA — Top 15 rankeado
+### 🥇 TABLA MAESTRA — Top 10
 
 | # | Nombre | Tipo | Cadena de skills | Score | Segmento |
 |---|--------|------|------------------|:-----:|----------|
@@ -32,12 +32,7 @@
 | 7 | 🧪 **TDD** ⟳ | loop | TDD (test rojo) → GSD (código) → test verde → *si rojo* ⟳ / refactor | **86** | testing |
 | 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO (security) → Shipping checklist → Ship → Land & Deploy | **85** | deploy |
 | 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox (analizar) → html-anything (reporte) | **84** | automatización |
-| 10 | 🔒 **BLINDAR** | combo | Context Mode → Careful → Security & Hardening → CSO → Ultra Review → Ship | **82** | seguridad |
-| 11 | 🎨 **DISEÑO** ⟳ | loop | Design Shotgun → Impeccable → UI Verification → *si no matchea* ⟳ Impeccable | **81** | diseño |
-| 12 | 🧹 **LIMPIAR** | combo | Ponytail Audit → Code Simplification → Ponytail Review → Ultra Review → Retro | **79** | calidad |
-| 13 | 👀 **VIGILANCIA** ⟳ | loop | ScrapeGraph monitor → *detecta cambio* → notifica → ⟳ (job programado) | **77** | automatización |
-| 14 | 📣 **COMUNICAR** | combo | Ship → Marketing Brief → Social Copy → Blog Post → Newsletter | **75** | marketing |
-| 15 | 🧬 **PERFIL** | combo | [pegar CV] → ADN Digital → Impeccable (portfolio) → Ship | **72** | producto |
+| 10 | 🧹 **LIMPIAR** ⟳ | loop | Escanear qué sobra (Ponytail Audit) → simplificar (Code Simplification) → revisar que no quedó bloat (Ponytail Review) → *si todavía hay deuda* ⟳ → cerrar con Retro | **83** | calidad |
 
 ⚙️ = ya existe como skill ejecutable (`03-diseno/obra-maestra`), no hay que recrearla.
 ⟳ = loop (se repite hasta la condición de salida).
@@ -61,12 +56,11 @@
 Un loop no termina en un paso: **se repite hasta cumplir una condición de salida**. Le decís la meta y Kiro itera solo.
 
 ```
-🐛 CAZA-BUGS    → arreglar → probar        REPITE hasta que el test pasa
-🛡️ CONTROL      → buscar fallas → arreglar  REPITE hasta que no queden fallas graves
-🧪 TDD          → escribir código → probar  REPITE hasta que todo pasa
-🎨 DISEÑO       → diseñar → comparar         REPITE hasta que se ve como querías
-⚡ CERO DEFECTOS → hacer → revisar           REPITE hasta que quedó bien terminado
-👀 VIGILANCIA   → revisar el sitio           REPITE cada cierto tiempo, avisa si cambia
+🐛 CAZA-BUGS    → arreglar → probar         REPITE hasta que el test pasa
+🛡️ CONTROL      → buscar fallas → arreglar   REPITE hasta que no queden fallas graves
+🧪 TDD          → escribir código → probar   REPITE hasta que todo pasa
+⚡ CERO DEFECTOS → hacer → revisar            REPITE hasta que quedó bien terminado
+🧹 LIMPIAR      → simplificar → revisar       REPITE hasta que no queda código de más
 ```
 
 **#5 🛡️ CONTROL — "control de calidad de seguridad: buscá y tapá los agujeros"**
@@ -76,6 +70,10 @@ Un *pentest* es simular un ataque para encontrar vulnerabilidades. La herramient
 **#6 ⚡ CERO DEFECTOS — "hacelo rápido, pero que quede terminado de verdad (right-first-time)"**
 Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecuta la tarea de forma simple y directa, después **se autoverifica** (¿compila?, ¿cubre todo lo pedido?, ¿quedó algún cabo suelto?). Si detecta que falta algo, lo corrige y vuelve a verificar. Sale del loop recién cuando está realmente listo.
 > `"CERO DEFECTOS: agregá el botón de exportar a PDF"` → lo implementa, se revisa a sí mismo, corrige lo que falte, y recién ahí te dice "listo".
+
+**#10 🧹 LIMPIAR — "sacá lo que sobra hasta dejar el código limpio"**
+Ataca la deuda técnica en ciclo: escanea el repo buscando código de más o duplicado (Ponytail Audit) → simplifica → revisa que no haya quedado nada innecesario (Ponytail Review). Si **todavía** encuentra bloat, **vuelve a pasar**; cierra con una retrospectiva de qué causó la deuda para no repetirla. Ideal cada 2-3 sprints o cuando un proyecto "se siente pesado".
+> `"LIMPIAR el módulo de reportes de CausasPro"` → escanea, simplifica, re-revisa hasta que no queda código de más, y te dice qué aprendió.
 
 ---
 
@@ -88,12 +86,12 @@ Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecu
 ├── 🔎 INVESTIGAR ────── Agent Reach → ScrapeGraph → Superpowers
 ├── ⚡ HACER RÁPIDO ──── GSD + Ponytail
 ├── 🏗️ CONSTRUIR ─────── Office Hours → Spec → GSD → Ship
-├── 🎨 DISEÑAR ───────── OBRA MAESTRA (o DISEÑO ⟳ si querés iterar)
+├── 🎨 DISEÑAR ───────── OBRA MAESTRA
 ├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
-├── 🛡️ ASEGURAR ──────── CONTROL ⟳ (Strix) / BLINDAR
-├── 📊 DATOS ─────────── ScrapeGraph MCP → sandbox → reporte
-├── 🚀 DEPLOYAR ──────── LANZAR (Ultra Review → CSO → Ship)
-└── 📣 COMUNICAR ─────── Marketing Brief → Social → Blog
+├── 🛡️ ASEGURAR ──────── CONTROL ⟳ (Strix)
+├── 📊 DATOS ─────────── PIPELINE DE DATOS (ScrapeGraph MCP → sandbox → reporte)
+├── 🧹 LIMPIAR ───────── LIMPIAR ⟳
+└── 🚀 DEPLOYAR ──────── LANZAR (Ultra Review → CSO → Ship)
 ```
 
 ### Cómo funciona un combo o loop paso a paso:
