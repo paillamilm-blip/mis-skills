@@ -1,432 +1,134 @@
-# 🔥 Combinaciones de Skills — Máximo Poder
+# 🏆 Ranking de Combos y Loops — Máximo Poder
 
-> Las skills individuales son buenas. Las **combinaciones** son devastadoras.  
-> Aquí están los mejores combos organizados por situación real.
-
----
-
-## 📋 Índice
-
-| # | Situación | Combo | Nivel |
-|---|-----------|-------|-------|
-| 1 | [Proyecto nuevo desde cero](#1--proyecto-nuevo-desde-cero) | 8 skills | 🏆 Épico |
-| 2 | [Feature compleja](#2--feature-compleja) | 6 skills | 🔥 Pro |
-| 3 | [Hacer todo RÁPIDO](#3--hacer-todo-rápido) | 3 skills | ⚡ Speed |
-| 4 | [Landing page profesional](#4--landing-page-profesional) | 5 skills | 🎨 Design |
-| 5 | [Refactor seguro](#5--refactor-seguro) | 5 skills | 🛡️ Safe |
-| 6 | [Deploy a producción](#6--deploy-a-producción) | 6 skills | 🚀 Ship |
-| 7 | [Debugging difícil](#7--debugging-difícil) | 5 skills | 🔍 Debug |
-| 8 | [Diseño de marca completo](#8--diseño-de-marca-completo) | 5 skills | 🎨 Brand |
-| 9 | [Auditoría de seguridad](#9--auditoría-de-seguridad) | 4 skills | 🛡️ Security |
-| 10 | [Aprender codebase nuevo](#10--aprender-codebase-nuevo) | 4 skills | 📚 Learn |
-| 11 | [Presentación de producto](#11--presentación-de-producto) | 4 skills | 📊 Pitch |
-| 12 | [Portfolio/CV digital](#12--portfoliocv-digital) | 4 skills | 👤 Personal |
-| 13 | [API nueva](#13--api-nueva) | 5 skills | 🔌 Backend |
-| 14 | [Limpieza de código](#14--limpieza-de-código) | 5 skills | 🧹 Clean |
-| 15 | [Sprint completo (1 semana)](#15--sprint-completo-1-semana) | 10 skills | 🏆 Full |
-| 16 | [Diseño potenciado (OBRA MAESTRA)](#16--diseño-potenciado-obra-maestra) | 4 skills | 🏆 Épico |
+> Reanálisis completo (modo **superpowers**) sobre las **115 skills reales**, incluidas las
+> nuevas de investigación/scraping/seguridad (Agent Reach, ScrapeGraphAI, ScrapeGraph MCP, Strix).
+> Reemplaza la lista de combos anterior.
 
 ---
 
-## 1 — Proyecto nuevo desde cero
+## 🧩 Conceptos
 
-> **Situación:** Empezás un proyecto sin nada. Necesitás definir, diseñar, e implementar.
+- **Combo** = secuencia lineal de skills (A → B → C, una sola pasada).
+- **Loop** ⟳ = ciclo que se **repite hasta cumplir una condición de salida** (ej: `fix → test → si falla, volver al fix`). Le decís la meta; Kiro itera solo y te reporta cada vuelta.
+- **Combo-skill** ⚙️ = ya existe como skill ejecutable (no hay que recrearla): `obra-maestra`, `automatizar-web`, `clonar`.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  FASE 1: PENSAR                                             │
-│  ┌──────────────┐  ┌───────────────┐  ┌─────────────────┐  │
-│  │ Office Hours │→ │ Interview Me  │→ │ Plan CEO Review │  │
-│  │ "¿Vale la    │  │ "Preguntame   │  │ "Pensá más      │  │
-│  │  pena?"      │  │  hasta        │  │  grande"        │  │
-│  └──────────────┘  │  entender"    │  └─────────────────┘  │
-│                    └───────────────┘                        │
-├─────────────────────────────────────────────────────────────┤
-│  FASE 2: DISEÑAR                                            │
-│  ┌──────────────────┐  ┌───────────────────┐               │
-│  │ Design           │→ │ Design System     │               │
-│  │ Consultation     │  │ "Tokens 3 capas"  │               │
-│  │ "Propuesta       │  └───────────────────┘               │
-│  │  completa"       │                                       │
-│  └──────────────────┘                                       │
-├─────────────────────────────────────────────────────────────┤
-│  FASE 3: CONSTRUIR                                          │
-│  ┌──────────────┐  ┌──────────────┐  ┌────────────────┐   │
-│  │ Spec-Driven  │→ │ GSD          │→ │ Ship           │   │
-│  │ "Spec antes  │  │ "Hacelo"     │  │ "Ship it"      │   │
-│  │  de codear"  │  └──────────────┘  └────────────────┘   │
-│  └──────────────┘                                           │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Comando secuencial:**
-```
-1. "Office hours: tengo esta idea → [describe]"
-2. "Interview me hasta que entiendas bien qué quiero"
-3. "Plan CEO review del plan"
-4. "Design consultation para el proyecto"
-5. "Creá el design system con tokens"
-6. "Spec-driven: especificá la feature principal"
-7. "GSD: implementalo"
-8. "Ship it"
-```
+**Puntuación (0–100):** `Impacto` + `Frecuencia` + `Palanca` (cuánto multiplica vs hacerlo suelto) − `Fricción` (setup/costo/riesgo).
 
 ---
 
-## 2 — Feature compleja
+## 📊 TABLA MAESTRA — Ranking
 
-> **Situación:** Tenés que implementar algo grande en un proyecto existente.
-
-```
-Context Mode → Autoplan → Incremental → Code Review Ultra → QA → Ship
-```
-
-**Paso a paso:**
-```
-1. "Context mode: quiero agregar [feature]"          ← Análisis de impacto
-2. "Autoplan"                                        ← CEO+Eng+Design review
-3. "Implementá incrementalmente"                     ← De a pasos, nunca todo junto
-4. "Ultra review"                                    ← Auditoría 6 dimensiones
-5. "QA test this"                                    ← Testing en browser real
-6. "Ship it"                                         ← Tests→changelog→PR
-```
-
-**Cuándo:** Marketplace, sistema de pagos, nueva sección completa, refactor de módulo.
-
----
-
-## 3 — Hacer todo RÁPIDO
-
-> **Situación:** Sabés exactamente qué querés. Solo necesitás que se haga YA.
-
-```
-GSD + Ponytail + Incremental
-```
-
-**Comando:**
-```
-"Modo GSD con ponytail: [describe lo que querés]. Entregá incrementalmente."
-```
-
-**Por qué funciona:**
-- **GSD** = ejecuta sin preguntar
-- **Ponytail** = la solución más simple que funcione
-- **Incremental** = de a pasos para no perder el hilo
-
-**Cuándo:** Fixes rápidos, componentes simples, tareas bien definidas, prototipos.
+| # | Nombre | Tipo | Cadena de skills | Score |
+|---|--------|------|------------------|:-----:|
+| 1 | 🏗️ **CONSTRUIR** | combo | Office Hours → Autoplan → Spec → GSD+Incremental → Ultra Review → Ship | **95** |
+| 2 | 🔎 **INVESTIGAR** | combo | Agent Reach → ScrapeGraph → Superpowers (síntesis) | **93** |
+| 3 | 🎨 **OBRA MAESTRA** | combo ⚙️ | taste → ui-ux-pro-max → impeccable → animate | **92** |
+| 4 | 🐛 **CAZA-BUGS** | loop ⟳ | Investigate → Superpowers → fix → QA → *si falla* ⟳ | **90** |
+| 5 | 🛡️ **PENTEST** | loop ⟳ | Strix scan → priorizar → fix → re-scan → *hasta 0 críticas* ⟳ | **89** |
+| 6 | ⚡ **HACER-BIEN** | loop ⟳ | GSD+Ponytail → Verification-Before-Completion → *si no pasa* ⟳ | **88** |
+| 7 | 🧪 **TDD** | loop ⟳ | test rojo → código → test verde → *si rojo* ⟳ / refactor | **86** |
+| 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO → Shipping checklist → Ship → Land & Deploy | **85** |
+| 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox → html-anything | **84** |
+| 10 | 🔒 **BLINDAR** | combo | Context Mode → Careful → Security & Hardening → CSO → Ultra Review → Ship | **82** |
+| 11 | 🎨 **DISEÑO** | loop ⟳ | Design Shotgun → Impeccable → UI Verification → *si no matchea* ⟳ | **81** |
+| 12 | 🧹 **LIMPIAR** | combo | Ponytail Audit → Code Simplification → Ponytail Review → Ultra Review → Retro | **79** |
+| 13 | 👀 **VIGILANCIA** | loop ⟳ | ScrapeGraph monitor → *detecta cambio* → notifica → ⟳ | **77** |
+| 14 | 📣 **COMUNICAR** | combo | Ship → Marketing Brief → Social Copy → Blog Post → Newsletter | **75** |
+| 15 | 🧬 **PERFIL** | combo | [CV] → ADN Digital → Impeccable (portfolio) → Ship | **72** |
 
 ---
 
-## 4 — Landing page profesional
+## 🔝 Los detallados (Top 6)
 
-> **Situación:** Necesitás una landing que se vea INCREÍBLE y no genérica.
+### 1 — 🏗️ CONSTRUIR (combo · 95)
+> Proyecto o feature grande, de la idea a producción.
+```
+Office Hours → Autoplan → Spec → GSD + Incremental → Ultra Review → Ship
+```
+**Comando:** `"CONSTRUIR: [qué]"` · **Cuándo:** feature nueva, módulo, sistema completo.
 
+### 2 — 🔎 INVESTIGAR (combo · 93) 🆕
+> Traer info real de internet y sintetizarla. Desbloquea las skills nuevas.
 ```
-Taste Skill + Impeccable (Persuade) + Animate + UI/UX Pro Max + Frontend UI Eng
+Agent Reach (leer web/YouTube/Reddit/Twitter) → ScrapeGraph (extraer JSON) → Superpowers (sintetizar)
 ```
+**Comando:** `"Investigá [tema] en internet y resumí"` · **Cuándo:** research de mercado, comparar herramientas, ver qué dicen de un producto, due diligence.
 
-**Paso a paso:**
+### 3 — 🎨 OBRA MAESTRA (combo-skill · 92) ⚙️
+> UI nivel award. Ya es una skill real que encadena las 4 fases.
 ```
-1. "Taste skill: landing para [producto/audiencia]"  ← Lee la sala, anti-defaults
-2. "Impeccable modo Persuade"                        ← UI nivel award-winning
-3. "UI/UX Pro Max: paleta + fonts para [vibe]"       ← Datos de 192 paletas
-4. "Animate: micro-interactions para la landing"     ← Motion con propósito
-5. "Frontend UI: hacelo accesible + responsive"      ← WCAG + todos los devices
+taste (leer la sala) → ui-ux-pro-max (inteligencia) → impeccable (ejecutar) → animate (vida)
 ```
+**Comando:** `"OBRA MAESTRA [pantalla]"` · **Cuándo:** landing, dashboard, portfolio, componente premium.
 
-**Cuándo:** Tu portfolio, landing de producto, sitio de freelance, pitch a inversores.
+### 4 — 🐛 CAZA-BUGS (loop ⟳ · 90)
+> Bug que no cede a la primera. Itera hasta que el test pasa.
+```
+Investigate → Superpowers (hipótesis) → fix (GSD) → QA
+        ⟳ si el test falla, vuelve al fix con lo aprendido
+```
+**Comando:** `"CAZA-BUGS: [síntoma]"` · **Salida:** test en verde / causa raíz cerrada.
+
+### 5 — 🛡️ PENTEST (loop ⟳ · 89) 🆕
+> Seguridad ofensiva real con Strix. Itera hasta cerrar críticas.
+```
+Strix (scan) → priorizar por severidad → fix → Strix (re-scan)
+        ⟳ hasta 0 vulnerabilidades críticas/altas
+```
+**Comando:** `"Loop de pentest sobre [proyecto] hasta cerrar las críticas"` · ⚠️ solo sobre lo tuyo.
+
+### 6 — 📊 PIPELINE DE DATOS (combo · 84) 🆕
+> Extraer → analizar → reportar, end-to-end.
+```
+ScrapeGraph MCP (extraer) → microsandbox (analizar en aislado) → html-anything (reporte visual)
+```
+**Comando:** `"PIPELINE: extraé [datos] de [fuente], analizá y generá reporte"`.
 
 ---
 
-## 5 — Refactor seguro
+## 🔥 Top 5 del día a día
 
-> **Situación:** Querés reorganizar código sin romper nada.
-
-```
-Context Mode → Ponytail Audit → Careful → Code Review Ultra → QA Skill
-```
-
-**Paso a paso:**
-```
-1. "Context mode: quiero refactorear [módulo]"       ← Qué se toca, qué puede romper
-2. "Ponytail audit: qué sobra en este módulo?"       ← Lista de qué borrar/simplificar
-3. "Modo careful: hacé el refactor"                  ← Extra verificación en cada paso
-4. "Ultra review del refactor"                       ← Validar que nada se rompió
-5. "QA skill: verificá contra errores anteriores"    ← Pre-flight check
-```
-
-**Cuándo:** Limpiar deuda técnica, reorganizar módulos, migrar patrones.
+| # | Combo | Frase rápida | Situación |
+|---|-------|--------------|-----------|
+| 1 | **HACER** | `"Hacelo: [tarea]"` | 80% de las tareas |
+| 2 | **INVESTIGAR** | `"Investigá [tema] y resumí"` | Antes de decidir/construir |
+| 3 | **OBRA MAESTRA** | `"OBRA MAESTRA [pantalla]"` | UI que tiene que verse pro |
+| 4 | **REVISAR+LANZAR** | `"Ultra review y ship it"` | Cerrar PR con calidad |
+| 5 | **CAZA-BUGS** | `"Investigá y arreglá [error]"` | Bug difícil |
 
 ---
 
-## 6 — Deploy a producción
-
-> **Situación:** Estás listo para shipear. No querés que nada falle.
-
-```
-Freeze → Code Review Ultra → CSO → Ship → Land & Deploy → Unfreeze
-```
-
-**Paso a paso:**
-```
-1. "Freeze: congelá el código"                       ← Nadie más pushea
-2. "Ultra review de todo lo que va a producción"     ← 6 dimensiones
-3. "CSO: security audit rápido"                      ← OWASP check
-4. "Ship it"                                         ← Tests→version→changelog→PR
-5. "Land and deploy"                                 ← Merge + verificación
-6. "Unfreeze"                                        ← Desbloquear para el equipo
-```
-
-**Cuándo:** Release mayor, feature crítica, después de sprint, primer deploy.
-
----
-
-## 7 — Debugging difícil
-
-> **Situación:** Algo está roto y no sabés por qué.
-
-```
-Investigate → Superpowers → QA Skill → Debugging & Recovery → Retro
-```
-
-**Paso a paso:**
-```
-1. "Investigá este error: [síntoma]"                 ← Root cause analysis profundo
-2. "Superpowers: analiza las 3 posibles causas"      ← Razonamiento multidimensional
-3. "QA skill: ¿tuvimos este error antes?"            ← Consultar historial
-4. "Debug y arreglá"                                 ← Fix sistemático
-5. "Retro: qué aprendimos de este bug"              ← Post-mortem para no repetir
-```
-
-**Cuándo:** Bugs de producción, errores intermitentes, problemas de performance.
-
----
-
-## 8 — Diseño de marca completo
-
-> **Situación:** Necesitás identidad visual desde cero.
-
-```
-Brand → Design → Design System → Banner Design → Slides
-```
-
-**Paso a paso:**
-```
-1. "Brand: definí la identidad para [producto]"      ← Voz, valores, personalidad
-2. "Design: logo + CIP completo"                     ← 55 estilos de logo
-3. "Design system: tokens de la marca"               ← Colores, fonts, spacing
-4. "Banners para todas las plataformas"              ← Redes sociales + ads
-5. "Slides: presentación de la marca"                ← Pitch deck profesional
-```
-
-**Cuándo:** Startup nueva, rebranding, proyecto freelance, identidad corporativa.
-
----
-
-## 9 — Auditoría de seguridad
-
-> **Situación:** Querés asegurarte de que tu app es segura.
-
-```
-CSO → Security & Hardening → Guard → Code Review Ultra (security focus)
-```
-
-**Paso a paso:**
-```
-1. "CSO: auditoría completa"                         ← OWASP, STRIDE, secrets, deps
-2. "Security hardening de [auth/inputs/datos]"       ← Hardening específico
-3. "Guard mode: protegé los archivos críticos"       ← Prevenir cambios peligrosos
-4. "Ultra review con foco en seguridad"              ← Verificar que todo cerró
-```
-
-**Cuándo:** Antes de launch, manejo de datos sensibles, auth, pagos, GDPR.
-
----
-
-## 10 — Aprender codebase nuevo
-
-> **Situación:** Te unís a un proyecto que no conocés.
-
-```
-Codebase Memory → Context Mode (resumen) → Diagram → Learn
-```
-
-**Paso a paso:**
-```
-1. "Indexá este codebase"                            ← Grafo de conocimiento
-2. "Context mode: dame un resumen del proyecto"      ← Arquitectura, módulos, flujos
-3. "Diagrama de la arquitectura"                     ← Visual del sistema
-4. "Qué learnings tiene este proyecto?"              ← Historial de decisiones
-```
-
-**Cuándo:** Onboarding, proyecto heredado, repo open source que querés contribuir.
-
----
-
-## 11 — Presentación de producto
-
-> **Situación:** Necesitás un pitch deck o presentación profesional.
-
-```
-Office Hours → Slides → Design Shotgun → Impeccable (Persuade)
-```
-
-**Paso a paso:**
-```
-1. "Office hours: ayudame a pensar el pitch"         ← Estructura del mensaje
-2. "Slides: presentación de [X] slides"              ← HTML + Chart.js
-3. "Design shotgun: 3 variantes de estilo"           ← Comparar opciones
-4. "Impeccable Persuade: puí la final"              ← Nivel award-winning
-```
-
-**Cuándo:** Pitch a inversores, demo de producto, presentación interna.
-
----
-
-## 12 — Portfolio/CV digital
-
-> **Situación:** Querés mostrar quién sos y qué sabés hacer.
-
-```
-ADN Digital + Impeccable (Experience) + Taste Skill + Animate
-```
-
-**Paso a paso:**
-```
-1. "Procesá mi CV: [pegar texto]"                    ← ADN Digital JSON
-2. "Impeccable modo Experience: portfolio"           ← El artefacto lidera
-3. "Taste skill: que no se vea genérico"             ← Anti-AI, con personalidad
-4. "Animá las transiciones del portfolio"            ← Motion con propósito
-```
-
-**Cuándo:** Buscar trabajo, mostrar proyectos, personal branding.
-
----
-
-## 13 — API nueva
-
-> **Situación:** Diseñar e implementar una API (REST/GraphQL).
-
-```
-Spec-Driven → API & Interface Design → TDD → Security & Hardening → Document
-```
-
-**Paso a paso:**
-```
-1. "Spec: especificá la API de [recurso]"            ← Endpoints, contratos, tipos
-2. "Diseñá la API: REST con [constraints]"           ← Stable interfaces
-3. "TDD: tests de los endpoints primero"             ← Cobertura antes de código
-4. "Security hardening de la API"                    ← Input validation, rate limit
-5. "Documentá la API"                                ← OpenAPI/ADR
-```
-
-**Cuándo:** Backend nuevo, Edge Functions, microservicio, integración.
-
----
-
-## 14 — Limpieza de código
-
-> **Situación:** El repo creció mucho y hay deuda técnica acumulada.
-
-```
-Ponytail Audit → Code Simplification → Ponytail Review → Ponytail Gain → Retro
-```
-
-**Paso a paso:**
-```
-1. "Ponytail audit: escaneá todo el repo"            ← Lista rankeada de bloat
-2. "Simplificá [módulo más complejo]"                ← Reducir sin cambiar behavior
-3. "Ponytail review del PR de limpieza"              ← ¿Quedó algo que sobre?
-4. "Ponytail gain: cuánto mejoré?"                   ← Scoreboard de impacto
-5. "Retro: qué causó la deuda técnica?"              ← Prevenir que vuelva
-```
-
-**Cuándo:** Cada 2-3 sprints, antes de release mayor, cuando el repo se siente lento.
-
----
-
-## 15 — Sprint completo (1 semana)
-
-> **Situación:** Una semana de trabajo productivo con todas las garantías.
-
-```
-LUNES:      Office Hours → Autoplan → Spec
-MARTES-JUE: GSD + Incremental + QA Skill
-JUEVES:     Code Review Ultra + CSO
-VIERNES:    Ship → Land & Deploy → Retro
-```
-
-**El ritmo:**
-```
-Lunes AM:    "Office hours: qué construimos esta semana?"
-Lunes PM:    "Autoplan" + "Spec de cada feature"
-Mar-Jue:     "GSD: implementá [feature 1]" → "GSD: [feature 2]" → ...
-             (QA Skill activo todo el tiempo, aprendiendo)
-Jueves PM:   "Ultra review de todo" + "Security audit"
-Viernes AM:  "Ship it" → "Land and deploy"
-Viernes PM:  "Retro: qué aprendimos esta semana?"
-```
-
----
-
-## 16 — Diseño potenciado (OBRA MAESTRA)
-
-> **Situación:** Necesitás una UI que se vea, se sienta y se mueva como diseño de verdad, no como output de IA. El combo de diseño más potente del repo.
-
-```
-Taste Skill → UI/UX Pro Max → Impeccable → Animate
-(1 solo comando: OBRA MAESTRA)
-```
-
-**Las 4 fases encadenadas:**
-```
-1. LEER LA SALA   → design read en 1 línea + 3 dials + elegir sistema      (taste-skill)
-2. INTELIGENCIA   → --design-system con los dials como flags + deep-dives  (ui-ux-pro-max)
-3. EJECUTAR+REF   → modo + comando + verificación ACOTADA                  (impeccable)
-4. DARLE VIDA     → gate → propósito → tool más barato → transform+opacity (animate)
-```
-
-**Comando único:**
-```
-"OBRA MAESTRA landing para [producto]"
-"OBRA MAESTRA rediseñá el dashboard de mi app"
-"OBRA MAESTRA un componente [X] premium"
-```
-
-**Por qué es distinto:** no es concatenar las 4 skills, es potenciarlas. El output de cada fase alimenta la siguiente (el design read elige el modo de impeccable, los dials calibran los flags de pro-max, el tier de motion define el presupuesto de animate) y la barra de calidad audita que ninguna dejó un default de IA (púrpura-AI, Inter, `scale(0)`, `transition: all`, CTAs duplicados, etc.).
-
-**Cuándo:** Landing anti-slop nivel award, rediseño de app/dashboard, portfolio, componente premium, o cualquier tarea donde el resultado tiene que verse impecable.
-
-Skill completa: `kiro-skills/03-diseno/obra-maestra/SKILL.md`
-
----
-
-## 🎯 Mapa de decisión rápida
+## 🗺️ Mapa de decisión rápida
 
 ```
 ¿Qué necesito?
 │
-├── 💡 PENSAR ──────── Office Hours → Autoplan
-├── ⚡ HACER RÁPIDO ── GSD + Ponytail
-├── 🏗️ CONSTRUIR ───── Context Mode → Spec → GSD → Ship
-├── 🎨 DISEÑAR ─────── OBRA MAESTRA (Taste + Pro Max + Impeccable + Animate)
-├── 🔍 REVISAR ─────── Code Review Ultra + CSO
-├── 🧪 TESTEAR ─────── QA (browser) + QA Skill (errores)
-├── 🐛 DEBUGGEAR ───── Investigate + Superpowers
-├── 🚀 DEPLOYAR ────── Ship → Land & Deploy
-├── 🛡️ PROTEGER ────── CSO + Freeze + Guard
-├── 📝 DOCUMENTAR ──── Document Generate + Diagram
-└── 🧹 LIMPIAR ─────── Ponytail Audit + Code Simplification
+├── 💡 PENSAR ────────── Office Hours → Autoplan
+├── 🔎 INVESTIGAR ────── Agent Reach → ScrapeGraph → Superpowers
+├── ⚡ HACER RÁPIDO ──── GSD + Ponytail
+├── 🏗️ CONSTRUIR ─────── Office Hours → Spec → GSD → Ship
+├── 🎨 DISEÑAR ───────── OBRA MAESTRA (o DISEÑO ⟳ para iterar)
+├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
+├── 🛡️ ASEGURAR ──────── PENTEST ⟳ / BLINDAR
+├── 📊 DATOS ─────────── ScrapeGraph MCP → sandbox → reporte
+├── 🚀 DEPLOYAR ──────── LANZAR
+└── 📣 COMUNICAR ─────── Marketing Brief → Social → Blog
 ```
 
 ---
 
-## ⚡ Top 5 Combos del Día a Día
+## 💬 Cómo se ejecuta
 
-| # | Combo | Comando rápido | Situación |
-|---|-------|----------------|-----------|
-| 1 | **Speed Build** | `"GSD + ponytail: [tarea]"` | 80% de las tareas diarias |
-| 2 | **Safe Change** | `"Context mode → careful → ultra review"` | Cambios que no pueden fallar |
-| 3 | **Ship Fast** | `"Ultra review → ship it"` | PR rápido con calidad |
-| 4 | **Design Right** | `"Design shotgun → impeccable"` | UI que se ve increíble |
-| 5 | **Full Cycle** | `"Autoplan → GSD → ultra review → ship"` | Feature completa end-to-end |
+```
+Combo (lineal):
+  Vos: "CONSTRUIR: sistema de pagos"
+  Kiro: paso 1 → mostrás → "dale" → paso 2 → ... hasta terminar
+
+Loop ⟳ (iterativo hasta condición):
+  Vos: "CAZA-BUGS: el login falla intermitente"
+  Kiro: investiga → arregla → testea
+        → si falla, repite el fix con lo aprendido
+        → te reporta cada vuelta HASTA que el test pasa.
+```
+
+> Los tres combos-skill ⚙️ (`obra-maestra`, `automatizar-web`, `clonar`) siguen viviendo como skills ejecutables en sus carpetas; este ranking solo documenta cómo y cuándo combinarlas.
