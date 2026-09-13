@@ -27,8 +27,8 @@
 | 2 | 🔎 **INVESTIGAR** | combo | Agent Reach (leer web/redes) → ScrapeGraph (extraer JSON) → Superpowers (sintetizar) | **93** | research |
 | 3 | 🎨 **OBRA MAESTRA** | combo⚙️ | taste → ui-ux-pro-max → impeccable → animate *(ya es skill real)* | **92** | diseño |
 | 4 | 🐛 **CAZA-BUGS** ⟳ | loop | Investigate → Superpowers → fix (GSD) → QA → *si falla* ⟳ vuelve al fix | **90** | debugging |
-| 5 | 🛡️ **PENTEST** ⟳ | loop | Buscar fallas de seguridad con Strix → arreglar la más grave → volver a escanear → repetir hasta que no queden fallas graves | **89** | seguridad |
-| 6 | ⚡ **HACER-BIEN** ⟳ | loop | Hacer la tarea rápido y simple → revisar si de verdad quedó terminada → si falta algo, corregir y volver a revisar hasta que esté OK | **88** | ejecución |
+| 5 | 🛡️ **CONTROL** ⟳ | loop | Buscar fallas de seguridad con Strix → arreglar la más grave → volver a escanear → repetir hasta que no queden fallas graves | **89** | seguridad |
+| 6 | ⚡ **CERO DEFECTOS** ⟳ | loop | Hacer la tarea rápido y simple → revisar si de verdad quedó terminada → si falta algo, corregir y volver a revisar hasta que esté OK | **88** | ejecución |
 | 7 | 🧪 **TDD** ⟳ | loop | TDD (test rojo) → GSD (código) → test verde → *si rojo* ⟳ / refactor | **86** | testing |
 | 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO (security) → Shipping checklist → Ship → Land & Deploy | **85** | deploy |
 | 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox (analizar) → html-anything (reporte) | **84** | automatización |
@@ -62,20 +62,20 @@ Un loop no termina en un paso: **se repite hasta cumplir una condición de salid
 
 ```
 🐛 CAZA-BUGS    → arreglar → probar        REPITE hasta que el test pasa
-🛡️ PENTEST      → buscar fallas → arreglar  REPITE hasta que no queden fallas graves
+🛡️ CONTROL      → buscar fallas → arreglar  REPITE hasta que no queden fallas graves
 🧪 TDD          → escribir código → probar  REPITE hasta que todo pasa
 🎨 DISEÑO       → diseñar → comparar         REPITE hasta que se ve como querías
-⚡ HACER-BIEN   → hacer → revisar            REPITE hasta que quedó bien terminado
+⚡ CERO DEFECTOS → hacer → revisar           REPITE hasta que quedó bien terminado
 👀 VIGILANCIA   → revisar el sitio           REPITE cada cierto tiempo, avisa si cambia
 ```
 
-**#5 🛡️ PENTEST — "buscá y tapá los agujeros de seguridad"**
+**#5 🛡️ CONTROL — "control de calidad de seguridad: buscá y tapá los agujeros"**
 Un *pentest* es simular un ataque para encontrar vulnerabilidades. La herramienta **Strix** revisa tu app como lo haría un hacker, te dice qué encontró (ordenado por gravedad), arreglás lo más grave, y **vuelve a revisar**. Se repite hasta que no queden fallas críticas.
 > `"Loop de pentest sobre CausasPro hasta cerrar las fallas graves"` → Kiro escanea, arregla, re-escanea y te reporta cada vuelta. ⚠️ Solo sobre proyectos tuyos.
 
-**#6 ⚡ HACER-BIEN — "hacelo rápido, pero que quede terminado de verdad"**
+**#6 ⚡ CERO DEFECTOS — "hacelo rápido, pero que quede terminado de verdad (right-first-time)"**
 Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecuta la tarea de forma simple y directa, después **se autoverifica** (¿compila?, ¿cubre todo lo pedido?, ¿quedó algún cabo suelto?). Si detecta que falta algo, lo corrige y vuelve a verificar. Sale del loop recién cuando está realmente listo.
-> `"HACER-BIEN: agregá el botón de exportar a PDF"` → lo implementa, se revisa a sí mismo, corrige lo que falte, y recién ahí te dice "listo".
+> `"CERO DEFECTOS: agregá el botón de exportar a PDF"` → lo implementa, se revisa a sí mismo, corrige lo que falte, y recién ahí te dice "listo".
 
 ---
 
@@ -90,7 +90,7 @@ Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecu
 ├── 🏗️ CONSTRUIR ─────── Office Hours → Spec → GSD → Ship
 ├── 🎨 DISEÑAR ───────── OBRA MAESTRA (o DISEÑO ⟳ si querés iterar)
 ├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
-├── 🛡️ ASEGURAR ──────── PENTEST ⟳ (Strix) / BLINDAR
+├── 🛡️ ASEGURAR ──────── CONTROL ⟳ (Strix) / BLINDAR
 ├── 📊 DATOS ─────────── ScrapeGraph MCP → sandbox → reporte
 ├── 🚀 DEPLOYAR ──────── LANZAR (Ultra Review → CSO → Ship)
 └── 📣 COMUNICAR ─────── Marketing Brief → Social → Blog
