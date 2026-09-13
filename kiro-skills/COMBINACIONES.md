@@ -26,9 +26,9 @@
 | 4 | 🐛 **CAZA-BUGS** | loop ⟳ | Investigate → Superpowers → fix → QA → *si falla* ⟳ | **90** |
 | 5 | 🛡️ **CONTROL** | loop ⟳ | Buscar fallas con Strix → arreglar la más grave → re-escanear → repetir hasta que no queden graves | **89** |
 | 6 | ⚡ **CERO DEFECTOS** | loop ⟳ | Hacer rápido y simple → autoverificar que quedó completo → corregir → repetir hasta que está OK | **88** |
-| 7 | 🧪 **TDD** | loop ⟳ | test rojo → código → test verde → *si rojo* ⟳ / refactor | **86** |
-| 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO → Shipping checklist → Ship → Land & Deploy | **85** |
-| 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox → html-anything | **84** |
+| 7 | 🧪 **TDD** | loop ⟳ | Escribir la prueba (falla) → código para que pase → limpiar → repetir con la siguiente parte | **86** |
+| 8 | 🚀 **LANZAR** | combo | Revisar a fondo → chequear seguridad → checklist de release → publicar → verificar en producción | **85** |
+| 9 | 📊 **PIPELINE DE DATOS** | combo | Sacar datos de una web → procesarlos en entorno seguro → armar informe visual | **84** |
 | 10 | 🧹 **LIMPIAR** | loop ⟳ | Ponytail Audit (escanear bloat) → Code Simplification → Ponytail Review → *si queda deuda* ⟳ → Retro | **83** |
 
 ---
@@ -73,11 +73,13 @@ Strix (busca fallas) → ordenar por gravedad → arreglar → Strix (revisa de 
 **Comando:** `"Loop de pentest sobre [proyecto] hasta cerrar las fallas graves"` · ⚠️ solo sobre proyectos tuyos.
 
 ### 6 — 📊 PIPELINE DE DATOS (combo · 84) 🆕
-> Extraer → analizar → reportar, end-to-end.
+> De una web a un informe, automático: sacar → procesar → reportar.
 ```
-ScrapeGraph MCP (extraer) → microsandbox (analizar en aislado) → html-anything (reporte visual)
+ScrapeGraph (saca los datos de la web)
+  → microsandbox (los procesa en un entorno aislado, sin tocar tu máquina)
+  → html-anything (arma un informe visual listo para leer)
 ```
-**Comando:** `"PIPELINE: extraé [datos] de [fuente], analizá y generá reporte"`.
+**Comando:** `"PIPELINE: sacá [datos] de [web], procesalos y hacé un reporte"`.
 
 ### 7 — 🧹 LIMPIAR (loop ⟳ · 83)
 > Ataca la deuda técnica en ciclo: sacar lo que sobra hasta dejar el código limpio.
