@@ -29,16 +29,11 @@
 | 7 | 🧪 **TDD** | loop ⟳ | test rojo → código → test verde → *si rojo* ⟳ / refactor | **86** |
 | 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO → Shipping checklist → Ship → Land & Deploy | **85** |
 | 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox → html-anything | **84** |
-| 10 | 🔒 **BLINDAR** | combo | Context Mode → Careful → Security & Hardening → CSO → Ultra Review → Ship | **82** |
-| 11 | 🎨 **DISEÑO** | loop ⟳ | Design Shotgun → Impeccable → UI Verification → *si no matchea* ⟳ | **81** |
-| 12 | 🧹 **LIMPIAR** | combo | Ponytail Audit → Code Simplification → Ponytail Review → Ultra Review → Retro | **79** |
-| 13 | 👀 **VIGILANCIA** | loop ⟳ | ScrapeGraph monitor → *detecta cambio* → notifica → ⟳ | **77** |
-| 14 | 📣 **COMUNICAR** | combo | Ship → Marketing Brief → Social Copy → Blog Post → Newsletter | **75** |
-| 15 | 🧬 **PERFIL** | combo | [CV] → ADN Digital → Impeccable (portfolio) → Ship | **72** |
+| 10 | 🧹 **LIMPIAR** | loop ⟳ | Ponytail Audit (escanear bloat) → Code Simplification → Ponytail Review → *si queda deuda* ⟳ → Retro | **83** |
 
 ---
 
-## 🔝 Los detallados (Top 6)
+## 🔝 Los detallados (Top 7)
 
 ### 1 — 🏗️ CONSTRUIR (combo · 95)
 > Proyecto o feature grande, de la idea a producción.
@@ -84,6 +79,14 @@ ScrapeGraph MCP (extraer) → microsandbox (analizar en aislado) → html-anythi
 ```
 **Comando:** `"PIPELINE: extraé [datos] de [fuente], analizá y generá reporte"`.
 
+### 7 — 🧹 LIMPIAR (loop ⟳ · 83)
+> Ataca la deuda técnica en ciclo: sacar lo que sobra hasta dejar el código limpio.
+```
+Ponytail Audit (escanea bloat) → Code Simplification → Ponytail Review
+        ⟳ si todavía hay deuda, vuelve a pasar → Retro (qué la causó)
+```
+**Comando:** `"LIMPIAR [módulo]"` · **Cuándo:** cada 2-3 sprints o cuando el proyecto "se siente pesado". **Salida:** no queda código de más.
+
 ---
 
 ## 🔥 Top 5 del día a día
@@ -107,12 +110,12 @@ ScrapeGraph MCP (extraer) → microsandbox (analizar en aislado) → html-anythi
 ├── 🔎 INVESTIGAR ────── Agent Reach → ScrapeGraph → Superpowers
 ├── ⚡ HACER RÁPIDO ──── GSD + Ponytail
 ├── 🏗️ CONSTRUIR ─────── Office Hours → Spec → GSD → Ship
-├── 🎨 DISEÑAR ───────── OBRA MAESTRA (o DISEÑO ⟳ para iterar)
+├── 🎨 DISEÑAR ───────── OBRA MAESTRA
 ├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
-├── 🛡️ ASEGURAR ──────── CONTROL ⟳ / BLINDAR
-├── 📊 DATOS ─────────── ScrapeGraph MCP → sandbox → reporte
-├── 🚀 DEPLOYAR ──────── LANZAR
-└── 📣 COMUNICAR ─────── Marketing Brief → Social → Blog
+├── 🛡️ ASEGURAR ──────── CONTROL ⟳
+├── 📊 DATOS ─────────── PIPELINE DE DATOS
+├── 🧹 LIMPIAR ───────── LIMPIAR ⟳
+└── 🚀 DEPLOYAR ──────── LANZAR
 ```
 
 ---
