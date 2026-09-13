@@ -19,7 +19,7 @@
 
 ---
 
-### 🥇 TABLA MAESTRA — Top 10
+### 🥇 TABLA MAESTRA — Top 9
 
 | # | Nombre | Tipo | Cadena de skills | Score | Segmento |
 |---|--------|------|------------------|:-----:|----------|
@@ -29,10 +29,9 @@
 | 4 | 🐛 **CAZA-BUGS** ⟳ | loop | Investigate → Superpowers → fix (GSD) → QA → *si falla* ⟳ vuelve al fix | **90** | debugging |
 | 5 | 🛡️ **CONTROL** ⟳ | loop | Buscar fallas de seguridad con Strix → arreglar la más grave → volver a escanear → repetir hasta que no queden fallas graves | **89** | seguridad |
 | 6 | ⚡ **CERO DEFECTOS** ⟳ | loop | Hacer la tarea rápido y simple → revisar si de verdad quedó terminada → si falta algo, corregir y volver a revisar hasta que esté OK | **88** | ejecución |
-| 7 | 🧪 **TDD** ⟳ | loop | Primero escribir la prueba (falla) → escribir el código para que pase → limpiar el código → repetir con la siguiente parte | **86** | testing |
-| 8 | 🚀 **LANZAR** | combo | Revisar el código a fondo → chequear seguridad → repasar checklist de release → publicar → verificar que funcione en producción | **85** | deploy |
-| 9 | 📊 **PIPELINE DE DATOS** | combo | Sacar datos de una web → procesarlos en un entorno seguro → armar un informe visual listo para leer | **84** | automatización |
-| 10 | 🧹 **LIMPIAR** ⟳ | loop | Escanear qué sobra (Ponytail Audit) → simplificar (Code Simplification) → revisar que no quedó bloat (Ponytail Review) → *si todavía hay deuda* ⟳ → cerrar con Retro | **83** | calidad |
+| 7 | 🚀 **PUBLICAR** | combo | Revisar el código a fondo → chequear seguridad → repasar checklist de release → publicar → verificar que funcione en producción | **85** | deploy |
+| 8 | 📊 **REPORTE WEB** | combo | Sacar datos de una web → procesarlos en un entorno seguro → armar un informe visual listo para leer | **84** | automatización |
+| 9 | 🧹 **LIMPIAR** ⟳ | loop | Escanear qué sobra (Ponytail Audit) → simplificar (Code Simplification) → revisar que no quedó bloat (Ponytail Review) → *si todavía hay deuda* ⟳ → cerrar con Retro | **83** | calidad |
 
 ⚙️ = ya existe como skill ejecutable (`03-diseno/obra-maestra`), no hay que recrearla.
 ⟳ = loop (se repite hasta la condición de salida).
@@ -46,7 +45,7 @@
 | ⚡ **HACER** | `"Hacelo: [tarea]"` | 80% de las tareas |
 | 🔎 **INVESTIGAR** | `"Investigá [tema] en internet y resumí"` | Antes de decidir/construir algo |
 | 🎨 **OBRA MAESTRA** | `"OBRA MAESTRA [pantalla]"` | Cualquier UI que tiene que verse pro |
-| 🔍 **REVISAR + LANZAR** | `"Ultra review y ship it"` | Cerrar un PR con calidad |
+| 🔍 **REVISAR + PUBLICAR** | `"Ultra review y ship it"` | Cerrar un PR con calidad |
 | 🐛 **CAZA-BUGS** | `"Investigá y arreglá [error]"` | Bug que no cede a la primera |
 
 ---
@@ -58,7 +57,6 @@ Los **loops** ⟳ se repiten hasta cumplir una condición de salida (le decís l
 ```
 🐛 CAZA-BUGS    → arreglar → probar         REPITE hasta que el test pasa
 🛡️ CONTROL      → buscar fallas → arreglar   REPITE hasta que no queden fallas graves
-🧪 TDD          → escribir código → probar   REPITE hasta que todo pasa
 ⚡ CERO DEFECTOS → hacer → revisar            REPITE hasta que quedó bien terminado
 🧹 LIMPIAR      → simplificar → revisar       REPITE hasta que no queda código de más
 ```
@@ -71,19 +69,15 @@ Un *pentest* es simular un ataque para encontrar vulnerabilidades. La herramient
 Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecuta la tarea de forma simple y directa, después **se autoverifica** (¿compila?, ¿cubre todo lo pedido?, ¿quedó algún cabo suelto?). Si detecta que falta algo, lo corrige y vuelve a verificar. Sale del loop recién cuando está realmente listo.
 > `"CERO DEFECTOS: agregá el botón de exportar a PDF"` → lo implementa, se revisa a sí mismo, corrige lo que falte, y recién ahí te dice "listo".
 
-**#7 🧪 TDD — "escribí la prueba antes que el código"**
-TDD = *Test-Driven Development* (desarrollo guiado por pruebas). El orden se invierte: primero escribís una prueba de lo que querés (que **falla** porque el código todavía no existe) → escribís el código mínimo para que la prueba **pase** → limpiás el código → repetís con la siguiente parte. Así el código nace con una red de seguridad que avisa si algo se rompe más adelante. Ideal para lógica delicada (pagos, cálculos, el bot de CausasPro).
-> `"TDD para la función que calcula el total con descuento"` → escribe el test, luego el código, hasta que todo pasa.
-
-**#8 🚀 LANZAR — "publicar a producción sin que nada se rompa"**
+**#7 🚀 PUBLICAR — "sacar a producción sin que nada se rompa"**
 Es el ritual de salida a producción, en orden: **revisar el código a fondo** (Ultra Review) → **chequear seguridad** (CSO: busca vulnerabilidades comunes) → repasar el **checklist de release** → **publicar** (ship) → **verificar que quedó funcionando** en producción. Es lo que hacés cuando un cambio importante ya está listo y no querés sorpresas.
-> `"LANZAR"` (o `"Ultra review y ship it"`) → revisa, asegura, publica y confirma.
+> `"PUBLICAR"` (o `"Ultra review y ship it"`) → revisa, asegura, publica y confirma.
 
-**#9 📊 PIPELINE DE DATOS — "de una web a un informe, automático"**
+**#8 📊 REPORTE WEB — "de una web a un informe, automático"**
 Une tres pasos en cadena: **sacar datos** de una página (ScrapeGraph) → **procesarlos** en un entorno aislado y seguro (microsandbox, para que ejecutar código no toque tu máquina) → **armar un informe visual** listo para leer (html-anything). Sirve para convertir datos dispersos de la web en un reporte terminado — muy alineado a tu meta de "reportes tipo Magnar" en CausasPro.
-> `"PIPELINE: sacá los precios de esta página, analizalos y hacé un reporte"`.
+> `"REPORTE WEB: sacá los precios de esta página, analizalos y hacé un informe"`.
 
-**#10 🧹 LIMPIAR — "sacá lo que sobra hasta dejar el código limpio"**
+**#9 🧹 LIMPIAR — "sacá lo que sobra hasta dejar el código limpio"**
 Ataca la deuda técnica en ciclo: escanea el repo buscando código de más o duplicado (Ponytail Audit) → simplifica → revisa que no haya quedado nada innecesario (Ponytail Review). Si **todavía** encuentra bloat, **vuelve a pasar**; cierra con una retrospectiva de qué causó la deuda para no repetirla. Ideal cada 2-3 sprints o cuando un proyecto "se siente pesado".
 > `"LIMPIAR el módulo de reportes de CausasPro"` → escanea, simplifica, re-revisa hasta que no queda código de más, y te dice qué aprendió.
 
@@ -101,9 +95,9 @@ Ataca la deuda técnica en ciclo: escanea el repo buscando código de más o dup
 ├── 🎨 DISEÑAR ───────── OBRA MAESTRA
 ├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
 ├── 🛡️ ASEGURAR ──────── CONTROL ⟳ (Strix)
-├── 📊 DATOS ─────────── PIPELINE DE DATOS (ScrapeGraph MCP → sandbox → reporte)
+├── 📊 DATOS ─────────── REPORTE WEB (sacar → procesar → informe)
 ├── 🧹 LIMPIAR ───────── LIMPIAR ⟳
-└── 🚀 DEPLOYAR ──────── LANZAR (Ultra Review → CSO → Ship)
+└── 🚀 PUBLICAR ──────── Ultra Review → CSO → Ship → verificar
 ```
 
 ### Cómo funciona un combo o loop paso a paso:
