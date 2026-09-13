@@ -7,54 +7,100 @@
 
 ---
 
-## ⚡ 10 COMBOS — Una frase y listo
+## 🏆 RANKING DE COMBOS Y LOOPS
 
-| # | Combo | Qué le decís a Kiro | Para qué |
-|---|-------|---------------------|----------|
-| 1 | ⚡ **HACER** | `"Hacelo: [tarea]"` | Cualquier tarea clara — ejecución inmediata |
-| 2 | 🧠 **PENSAR** | `"Office hours: [idea]"` | Validar si algo vale la pena |
-| 3 | 🎨 **DISEÑAR** | `"Impeccable: [pantalla]"` | UI extraordinaria |
-| 4 | 🔍 **REVISAR** | `"Ultra review"` | Buscar bugs antes de producción |
-| 5 | 🚀 **LANZAR** | `"Ship it"` | De código listo a producción |
-| 6 | 🐛 **ARREGLAR** | `"Superpowers: [error]"` | Debugging profundo |
-| 7 | 🛡️ **PROTEGER** | `"Security check de [feature]"` | Verificar seguridad |
-| 8 | ✨ **ANIMACIÓN** | `"Animá [componente]"` | Agregar motion |
-| 9 | 🧬 **CV** | `[pegar texto de CV]` | Generar ADN Digital |
-| 10 | 🔬 **SINERGIA** | `"Sinergia"` | Verificar que todo está conectado |
-| 11 | 🌐 **NAVEGAR** | `"Navegá [URL]"` | Abrir browser, ver página, interactuar |
-| 12 | 🔬 **CLONAR** | `"CLONAR [url]"` | Clonar sitio: fiel (fuente real) o recrear (Next.js) |
-| 13 | ⚡ **AUTOMATIZAR** | `"AUTOMATIZAR [tarea]"` | Power Suite: extraer, llenar, monitorear, grabar, clonar, ejecutar, generar, pipeline |
+> Reanálisis completo (modo *superpowers*) sobre las 115 skills reales, incluidas las
+> nuevas de investigación/scraping/seguridad. Reemplaza los combos y cadenas viejos.
+>
+> **Combo** = secuencia lineal (A → B → C, una pasada).
+> **Loop** = ciclo que se repite hasta cumplir una condición de salida (⟳).
+>
+> **Cómo se puntúa (0–100):** `Impacto` (cuánto resuelve) + `Frecuencia` (cuán seguido lo usarás) + `Palanca` (cuánto multiplica vs hacerlo suelto) − `Fricción` (setup/costo/riesgo).
 
 ---
 
+### 🥇 TABLA MAESTRA — Top 15 rankeado
+
+| # | Nombre | Tipo | Cadena de skills | Score | Segmento |
+|---|--------|------|------------------|:-----:|----------|
+| 1 | 🏗️ **CONSTRUIR** | combo | Office Hours → Autoplan → Spec → GSD+Incremental → Ultra Review → Ship | **95** | full-stack |
+| 2 | 🔎 **INVESTIGAR** | combo | Agent Reach (leer web/redes) → ScrapeGraph (extraer JSON) → Superpowers (sintetizar) | **93** | research |
+| 3 | 🎨 **OBRA MAESTRA** | combo⚙️ | taste → ui-ux-pro-max → impeccable → animate *(ya es skill real)* | **92** | diseño |
+| 4 | 🐛 **CAZA-BUGS** ⟳ | loop | Investigate → Superpowers → fix (GSD) → QA → *si falla* ⟳ vuelve al fix | **90** | debugging |
+| 5 | 🛡️ **PENTEST** ⟳ | loop | Strix (scan) → priorizar → fix → Strix (re-scan) → *hasta 0 críticas* ⟳ | **89** | seguridad |
+| 6 | ⚡ **HACER-BIEN** ⟳ | loop | GSD+Ponytail → Verification-Before-Completion → *si no pasa* ⟳ ajustar | **88** | ejecución |
+| 7 | 🧪 **TDD** ⟳ | loop | TDD (test rojo) → GSD (código) → test verde → *si rojo* ⟳ / refactor | **86** | testing |
+| 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO (security) → Shipping checklist → Ship → Land & Deploy | **85** | deploy |
+| 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox (analizar) → html-anything (reporte) | **84** | automatización |
+| 10 | 🔒 **BLINDAR** | combo | Context Mode → Careful → Security & Hardening → CSO → Ultra Review → Ship | **82** | seguridad |
+| 11 | 🎨 **DISEÑO** ⟳ | loop | Design Shotgun → Impeccable → UI Verification → *si no matchea* ⟳ Impeccable | **81** | diseño |
+| 12 | 🧹 **LIMPIAR** | combo | Ponytail Audit → Code Simplification → Ponytail Review → Ultra Review → Retro | **79** | calidad |
+| 13 | 👀 **VIGILANCIA** ⟳ | loop | ScrapeGraph monitor → *detecta cambio* → notifica → ⟳ (job programado) | **77** | automatización |
+| 14 | 📣 **COMUNICAR** | combo | Ship → Marketing Brief → Social Copy → Blog Post → Newsletter | **75** | marketing |
+| 15 | 🧬 **PERFIL** | combo | [pegar CV] → ADN Digital → Impeccable (portfolio) → Ship | **72** | producto |
+
+⚙️ = ya existe como skill ejecutable (`03-diseno/obra-maestra`), no hay que recrearla.
+⟳ = loop (se repite hasta la condición de salida).
+
 ---
 
-## 🔗 10 CADENAS — Paso a paso para cosas grandes
+### 🔥 Los 5 que más vas a usar (día a día)
 
-| # | Nombre | Pasos |
-|---|--------|-------|
-| 1 | 🏗️ **CONSTRUIR** | Office hours → Hacelo → Ultra review → Ship it |
-| 2 | 🎨 **EMBELLECER** | Impeccable → Animá → Ultra review → Ship it |
-| 3 | 🐛 **REPARAR** | Superpowers → Hacelo → Ultra review → Ship it |
-| 4 | 🔒 **BLINDAR** | Office hours → Hacelo con cuidado → Security → Ultra review → Ship it |
-| 5 | 🚀 **LANZAR** | Ultra review → Security → Checklist → Ship it |
-| 6 | 🧬 **PERFIL** | [pegar CV] → Hacelo → Ultra review → Ship it |
-| 7 | 💡 **EXPLORAR** | Office hours → Superpowers → [elegís] → Hacelo → Ship it |
-| 8 | 🧹 **LIMPIAR** | Superpowers → Hacelo → Ultra review → Ship it |
-| 9 | 💎 **COMPLETO** | Office hours → Impeccable → Hacelo → Ultra review → Security → Ship it |
-| 10 | 📣 **COMUNICAR** | Ship it → Marketing brief → Posts redes → Blog post |
-| 11 | 🌐 **TESTEAR LIVE** | Navegá [URL] → Snapshot → Verificar elementos → Reportar bugs |
-| 12 | 🔬 **CLONAR** | CLONAR [url] → Recon → Elegir modo (Fiel/Recrear) → Build → QA visual |
-| 13 | ⚡ **PIPELINE WEB** | EXTRAER [datos] → EJECUTAR [analisis en sandbox] → GENERAR [reporte HTML] |
+| Combo | Frase para Kiro | Cuándo |
+|-------|-----------------|--------|
+| ⚡ **HACER** | `"Hacelo: [tarea]"` | 80% de las tareas |
+| 🔎 **INVESTIGAR** | `"Investigá [tema] en internet y resumí"` | Antes de decidir/construir algo |
+| 🎨 **OBRA MAESTRA** | `"OBRA MAESTRA [pantalla]"` | Cualquier UI que tiene que verse pro |
+| 🔍 **REVISAR + LANZAR** | `"Ultra review y ship it"` | Cerrar un PR con calidad |
+| 🐛 **CAZA-BUGS** | `"Investigá y arreglá [error]"` | Bug que no cede a la primera |
 
-### Cómo funciona una cadena:
+---
+
+### ⟳ Los Loops explicados (lo nuevo)
+
+Un loop no termina en un paso: **se repite hasta cumplir una condición de salida**. Le decís la meta y Kiro itera solo.
+
+```
+🐛 CAZA-BUGS    → repite fix→test   HASTA que el test pasa
+🛡️ PENTEST      → repite scan→fix   HASTA 0 vulnerabilidades críticas
+🧪 TDD          → repite código→test HASTA que todo está verde
+🎨 DISEÑO       → repite diseño→QA   HASTA que matchea la spec visual
+⚡ HACER-BIEN   → repite hasta que Verification-Before-Completion da OK
+👀 VIGILANCIA   → repite en el tiempo (job programado) vigilando cambios
+```
+
+**Cómo dispararlos:** `"Loop de pentest sobre CausasPro hasta cerrar las críticas"` — Kiro corre Strix, arregla, re-escanea, y repite reportándote cada vuelta hasta la condición.
+
+---
+
+### 🗺️ Mapa de decisión rápida
+
+```
+¿Qué necesito?
+│
+├── 💡 PENSAR ────────── Office Hours → Autoplan
+├── 🔎 INVESTIGAR ────── Agent Reach → ScrapeGraph → Superpowers
+├── ⚡ HACER RÁPIDO ──── GSD + Ponytail
+├── 🏗️ CONSTRUIR ─────── Office Hours → Spec → GSD → Ship
+├── 🎨 DISEÑAR ───────── OBRA MAESTRA (o DISEÑO ⟳ si querés iterar)
+├── 🐛 DEBUGGEAR ─────── CAZA-BUGS ⟳
+├── 🛡️ ASEGURAR ──────── PENTEST ⟳ (Strix) / BLINDAR
+├── 📊 DATOS ─────────── ScrapeGraph MCP → sandbox → reporte
+├── 🚀 DEPLOYAR ──────── LANZAR (Ultra Review → CSO → Ship)
+└── 📣 COMUNICAR ─────── Marketing Brief → Social → Blog
+```
+
+### Cómo funciona un combo o loop paso a paso:
 
 ```
 Vos: "CONSTRUIR: sistema de pagos"
 Kiro: [paso 1] → te muestra resultado → esperás
 Vos: "Dale" / "Sí" / "Siguiente"
-Kiro: [paso 2] → te muestra resultado → esperás
-...hasta completar
+Kiro: [paso 2] → ... hasta completar
+
+Vos: "CAZA-BUGS: el login falla intermitente"
+Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
+      → te reporta cada vuelta hasta que el test pasa.
 ```
 
 ---
