@@ -24,8 +24,8 @@
 | 2 | 🔎 **INVESTIGAR** | combo | Agent Reach → ScrapeGraph → Superpowers (síntesis) | **93** |
 | 3 | 🎨 **OBRA MAESTRA** | combo ⚙️ | taste → ui-ux-pro-max → impeccable → animate | **92** |
 | 4 | 🐛 **CAZA-BUGS** | loop ⟳ | Investigate → Superpowers → fix → QA → *si falla* ⟳ | **90** |
-| 5 | 🛡️ **PENTEST** | loop ⟳ | Strix scan → priorizar → fix → re-scan → *hasta 0 críticas* ⟳ | **89** |
-| 6 | ⚡ **HACER-BIEN** | loop ⟳ | GSD+Ponytail → Verification-Before-Completion → *si no pasa* ⟳ | **88** |
+| 5 | 🛡️ **PENTEST** | loop ⟳ | Buscar fallas con Strix → arreglar la más grave → re-escanear → repetir hasta que no queden graves | **89** |
+| 6 | ⚡ **HACER-BIEN** | loop ⟳ | Hacer rápido y simple → autoverificar que quedó completo → corregir → repetir hasta que está OK | **88** |
 | 7 | 🧪 **TDD** | loop ⟳ | test rojo → código → test verde → *si rojo* ⟳ / refactor | **86** |
 | 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO → Shipping checklist → Ship → Land & Deploy | **85** |
 | 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox → html-anything | **84** |
@@ -70,12 +70,12 @@ Investigate → Superpowers (hipótesis) → fix (GSD) → QA
 **Comando:** `"CAZA-BUGS: [síntoma]"` · **Salida:** test en verde / causa raíz cerrada.
 
 ### 5 — 🛡️ PENTEST (loop ⟳ · 89) 🆕
-> Seguridad ofensiva real con Strix. Itera hasta cerrar críticas.
+> *Pentest* = simular un ataque para encontrar agujeros de seguridad. Strix revisa tu app como un hacker, arreglás lo más grave y vuelve a revisar. Itera hasta que no quedan fallas graves.
 ```
-Strix (scan) → priorizar por severidad → fix → Strix (re-scan)
-        ⟳ hasta 0 vulnerabilidades críticas/altas
+Strix (busca fallas) → ordenar por gravedad → arreglar → Strix (revisa de nuevo)
+        ⟳ hasta que no queden vulnerabilidades críticas/altas
 ```
-**Comando:** `"Loop de pentest sobre [proyecto] hasta cerrar las críticas"` · ⚠️ solo sobre lo tuyo.
+**Comando:** `"Loop de pentest sobre [proyecto] hasta cerrar las fallas graves"` · ⚠️ solo sobre proyectos tuyos.
 
 ### 6 — 📊 PIPELINE DE DATOS (combo · 84) 🆕
 > Extraer → analizar → reportar, end-to-end.

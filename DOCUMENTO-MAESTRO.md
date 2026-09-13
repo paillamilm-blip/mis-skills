@@ -27,8 +27,8 @@
 | 2 | 🔎 **INVESTIGAR** | combo | Agent Reach (leer web/redes) → ScrapeGraph (extraer JSON) → Superpowers (sintetizar) | **93** | research |
 | 3 | 🎨 **OBRA MAESTRA** | combo⚙️ | taste → ui-ux-pro-max → impeccable → animate *(ya es skill real)* | **92** | diseño |
 | 4 | 🐛 **CAZA-BUGS** ⟳ | loop | Investigate → Superpowers → fix (GSD) → QA → *si falla* ⟳ vuelve al fix | **90** | debugging |
-| 5 | 🛡️ **PENTEST** ⟳ | loop | Strix (scan) → priorizar → fix → Strix (re-scan) → *hasta 0 críticas* ⟳ | **89** | seguridad |
-| 6 | ⚡ **HACER-BIEN** ⟳ | loop | GSD+Ponytail → Verification-Before-Completion → *si no pasa* ⟳ ajustar | **88** | ejecución |
+| 5 | 🛡️ **PENTEST** ⟳ | loop | Buscar fallas de seguridad con Strix → arreglar la más grave → volver a escanear → repetir hasta que no queden fallas graves | **89** | seguridad |
+| 6 | ⚡ **HACER-BIEN** ⟳ | loop | Hacer la tarea rápido y simple → revisar si de verdad quedó terminada → si falta algo, corregir y volver a revisar hasta que esté OK | **88** | ejecución |
 | 7 | 🧪 **TDD** ⟳ | loop | TDD (test rojo) → GSD (código) → test verde → *si rojo* ⟳ / refactor | **86** | testing |
 | 8 | 🚀 **LANZAR** | combo | Ultra Review → CSO (security) → Shipping checklist → Ship → Land & Deploy | **85** | deploy |
 | 9 | 📊 **PIPELINE DE DATOS** | combo | ScrapeGraph MCP → microsandbox (analizar) → html-anything (reporte) | **84** | automatización |
@@ -61,15 +61,21 @@
 Un loop no termina en un paso: **se repite hasta cumplir una condición de salida**. Le decís la meta y Kiro itera solo.
 
 ```
-🐛 CAZA-BUGS    → repite fix→test   HASTA que el test pasa
-🛡️ PENTEST      → repite scan→fix   HASTA 0 vulnerabilidades críticas
-🧪 TDD          → repite código→test HASTA que todo está verde
-🎨 DISEÑO       → repite diseño→QA   HASTA que matchea la spec visual
-⚡ HACER-BIEN   → repite hasta que Verification-Before-Completion da OK
-👀 VIGILANCIA   → repite en el tiempo (job programado) vigilando cambios
+🐛 CAZA-BUGS    → arreglar → probar        REPITE hasta que el test pasa
+🛡️ PENTEST      → buscar fallas → arreglar  REPITE hasta que no queden fallas graves
+🧪 TDD          → escribir código → probar  REPITE hasta que todo pasa
+🎨 DISEÑO       → diseñar → comparar         REPITE hasta que se ve como querías
+⚡ HACER-BIEN   → hacer → revisar            REPITE hasta que quedó bien terminado
+👀 VIGILANCIA   → revisar el sitio           REPITE cada cierto tiempo, avisa si cambia
 ```
 
-**Cómo dispararlos:** `"Loop de pentest sobre CausasPro hasta cerrar las críticas"` — Kiro corre Strix, arregla, re-escanea, y repite reportándote cada vuelta hasta la condición.
+**#5 🛡️ PENTEST — "buscá y tapá los agujeros de seguridad"**
+Un *pentest* es simular un ataque para encontrar vulnerabilidades. La herramienta **Strix** revisa tu app como lo haría un hacker, te dice qué encontró (ordenado por gravedad), arreglás lo más grave, y **vuelve a revisar**. Se repite hasta que no queden fallas críticas.
+> `"Loop de pentest sobre CausasPro hasta cerrar las fallas graves"` → Kiro escanea, arregla, re-escanea y te reporta cada vuelta. ⚠️ Solo sobre proyectos tuyos.
+
+**#6 ⚡ HACER-BIEN — "hacelo rápido, pero que quede terminado de verdad"**
+Es el modo "hacer las cosas" pero con un control de calidad al final: Kiro ejecuta la tarea de forma simple y directa, después **se autoverifica** (¿compila?, ¿cubre todo lo pedido?, ¿quedó algún cabo suelto?). Si detecta que falta algo, lo corrige y vuelve a verificar. Sale del loop recién cuando está realmente listo.
+> `"HACER-BIEN: agregá el botón de exportar a PDF"` → lo implementa, se revisa a sí mismo, corrige lo que falte, y recién ahí te dice "listo".
 
 ---
 
