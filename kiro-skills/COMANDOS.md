@@ -93,7 +93,7 @@
 | 13 | **Design Consultation** | `"Consultá diseño para..."` / `"Design system from scratch"` | Research landscape + propuesta completa |
 | 14 | **Design Review (gstack)** | `"Revisá el diseño de esta implementación"` | Auditoría de diseño sobre código existente |
 | 15 | **Design Shotgun** | `"Dame variantes de diseño"` / `"Múltiples opciones"` | Genera varias opciones rápidas para comparar |
-| 16 | **Obra Maestra** (combo) | `"OBRA MAESTRA [qué diseñar]"` / `"Diseño pro"` | 🏆 Combo potenciado: taste + pro-max + impeccable + animate en 1 pipeline |
+| 16 | **Obra Maestra** (combo) | `"OBRA MAESTRA [qué diseñar]"` / `"Diseño pro"` | 🏆 Combo potenciado: taste + pro-max + impeccable + animate, con shadcn + reglas-cursor-web como guardianes del código |
 | 17 | **shadcn Oficial** | `"Agrega [componente] con shadcn"` / `"shadcn init"` | Reglas oficiales shadcn/ui para la web de captación |
 
 ---

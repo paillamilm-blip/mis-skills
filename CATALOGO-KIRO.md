@@ -59,7 +59,7 @@
 | [`/design-system`](./.kiro/skills/design-system/SKILL.md) | Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography… |
 | [`/frontend-ui-engineering`](./.kiro/skills/frontend-ui-engineering/SKILL.md) | Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing… |
 | [`/impeccable`](./.kiro/skills/impeccable/SKILL.md) | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or… |
-| [`/obra-maestra`](./.kiro/skills/obra-maestra/SKILL.md) | COMBO POTENCIADO: Diseno frontend de nivel award, fusion de 4 skills en un solo pipeline. Combina taste-skill (leer el brief, dials anti-slop, elegir el… |
+| [`/obra-maestra`](./.kiro/skills/obra-maestra/SKILL.md) | COMBO POTENCIADO: Diseno frontend de nivel award, 4 skills de diseno + 2 guardianes de codigo en un solo pipeline. Combina taste-skill (leer el brief, dials… |
 | [`/migrate-radix-to-base`](./.kiro/skills/migrate-radix-to-base/SKILL.md) | Migrates React projects and components from Radix UI to Base UI. Use when asked to migrate from radix, move to base-ui, convert radix primitives, or switch… |
 | [`/shadcn`](./.kiro/skills/shadcn/SKILL.md) | Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project… |
 | [`/slides`](./.kiro/skills/slides/SKILL.md) | Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies. |

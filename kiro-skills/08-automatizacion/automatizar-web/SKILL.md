@@ -627,12 +627,27 @@ msb create debian --name test && msb rm test  # ✓ VMs funcionando
 
 ## Skills Referenciadas
 
-| Skill | Ubicacion | Funcion |
-|-------|-----------|---------|
-| agent-browser | `kiro-skills/08-automatizacion/agent-browser/` | Browser automation CLI |
-| clonar | `kiro-skills/08-automatizacion/clonar/` | Clonacion web (FIEL/RECREAR) |
-| microsandbox | `kiro-skills/08-automatizacion/microsandbox/` | MicroVMs aisladas |
-| html-anything | `kiro-skills/08-automatizacion/html-anything/` | Generacion HTML profesional |
+| Skill | Ruta junto a esta skill | Funcion |
+|-------|-------------------------|---------|
+| agent-browser | `../agent-browser/SKILL.md` (+ `../agent-browser-core/`, `../agent-browser-dogfood/`, `../agent-browser-electron/`, `../agent-browser-slack/`) | Browser automation CLI |
+| clonar | `../clonar/SKILL.md` | Clonacion web (FIEL/RECREAR) |
+| microsandbox | `../microsandbox/SKILL.md` | MicroVMs aisladas |
+| html-anything | `../html-anything/SKILL.md` | Generacion HTML profesional |
+
+### Como cargar las piezas (funciona en cualquier chat)
+
+Las piezas estan **junto a esta skill** en la carpeta de skills de Kiro (`../<skill>/SKILL.md`). Para cada una:
+
+1. Abrir `../<skill>/SKILL.md`.
+2. Si no esta: `find / -type f -path "*/<skill>/SKILL.md" -not -path "/proc/*" 2>/dev/null | head -1`
+3. Si no existe en este entorno, bajarla del repo publico:
+   ```bash
+   git clone -q --depth 1 --filter=blob:none --sparse https://github.com/paillamilm-blip/mis-skills.git /tmp/mis-skills \
+     && git -C /tmp/mis-skills sparse-checkout set .kiro/skills/<skill>
+   ```
+4. Sin red: avisar en una linea y seguir con lo que resume este archivo. Nunca detenerse por una pieza faltante.
+
+En el repo `mis-skills` la fuente esta en `kiro-skills/08-automatizacion/`.
 
 ---
 

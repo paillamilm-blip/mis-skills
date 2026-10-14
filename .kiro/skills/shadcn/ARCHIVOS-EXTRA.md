@@ -1,12 +1,14 @@
 # Archivos extra de `shadcn`
 
-No caben en el paquete de Kiro (máx. 25 archivos de texto por skill). Descárgalos solo si la tarea los necesita, por ejemplo:
+No caben en el paquete de Kiro (máx. 25 archivos por skill).
+- **Documentación** (✅ incluida): su contenido completo está más abajo en este archivo.
+- **Datos / código / binarios** (⬇️): descárgalos a la ruta indicada solo si la tarea los necesita:
 
 ```bash
-curl -fsSLO <enlace>
+mkdir -p "$(dirname <archivo>)" && curl -fsSL <enlace> -o <archivo>
 ```
 
-| Archivo | Enlace |
-|---------|--------|
-| `assets/shadcn-small.png` | https://raw.githubusercontent.com/paillamilm-blip/mis-skills/main/kiro-skills/03-diseno/shadcn-oficial/shadcn/assets/shadcn-small.png |
-| `assets/shadcn.png` | https://raw.githubusercontent.com/paillamilm-blip/mis-skills/main/kiro-skills/03-diseno/shadcn-oficial/shadcn/assets/shadcn.png |
+| Archivo | Estado | Enlace |
+|---------|--------|--------|
+| `assets/shadcn-small.png` | ⬇️ descargar | https://raw.githubusercontent.com/paillamilm-blip/mis-skills/main/kiro-skills/03-diseno/shadcn-oficial/shadcn/assets/shadcn-small.png |
+| `assets/shadcn.png` | ⬇️ descargar | https://raw.githubusercontent.com/paillamilm-blip/mis-skills/main/kiro-skills/03-diseno/shadcn-oficial/shadcn/assets/shadcn.png |

@@ -1,13 +1,15 @@
 ---
 name: obra-maestra
 description: >
-  COMBO POTENCIADO: Diseno frontend de nivel award, fusion de 4 skills en un solo
-  pipeline. Combina taste-skill (leer el brief, dials anti-slop, elegir el sistema
+  COMBO POTENCIADO: Diseno frontend de nivel award, 4 skills de diseno + 2 guardianes
+  de codigo en un solo pipeline. Combina taste-skill (leer el brief, dials anti-slop, elegir el sistema
   de diseno correcto), ui-ux-pro-max (inteligencia de diseno: 84 estilos, 192
   paletas, 74 font pairings, 98 guidelines UX), impeccable (barra de director de
   arte, modos Persuade/Operate/Read/Experience, paleta de comandos, verificacion
-  acotada) y animate (movimiento con filosofia Emil Kowalski, solo donde se lo gana).
-  4 fases encadenadas: LEER LA SALA -> INTELIGENCIA -> EJECUTAR Y REFINAR -> DARLE VIDA.
+  acotada) y animate (movimiento con filosofia Emil Kowalski), con shadcn (reglas
+  oficiales de componentes) y reglas-cursor-web (buenas practicas React/Vite/TS/Tailwind)
+  como guardianes del codigo. 4 fases: LEER LA SALA -> INTELIGENCIA -> EJECUTAR Y
+  REFINAR -> DARLE VIDA.
   Usar cuando el usuario dice disenar, diseno pro, obra maestra, landing, portfolio,
   rediseno, UI nivel award, redisenar, componente premium, o cualquier tarea donde
   el resultado tiene que verse, sentirse y moverse como diseno de verdad, no como
@@ -36,12 +38,15 @@ metadata:
     - ui-ux-pro-max
     - impeccable
     - animate
+    - shadcn
+    - reglas-cursor-web
+  version: 2.0.0
   author: paillamilm-blip
 ---
 
 # OBRA MAESTRA - El Combo de Diseno Potenciado
 
-> 4 skills. 1 pipeline. Diseno que no se ve hecho por IA, ejecutado con barra de director de arte, y que se mueve solo donde se lo gana.
+> 4 skills de diseno + 2 guardianes de codigo. 1 pipeline. Diseno que no se ve hecho por IA, ejecutado con barra de director de arte, construido con las reglas oficiales del stack, y que se mueve solo donde se lo gana.
 
 ```
 OBRA MAESTRA [que disenar]
@@ -56,7 +61,7 @@ OBRA MAESTRA componente [X] premium
 
 La mayoria del diseno que produce un LLM es malo por la misma razon: salta directo a un default (purpura AI, Inter, hero centrado sobre mesh oscuro, tres cards iguales) sin leer lo que el usuario realmente quiere. Este combo existe para romper ese reflejo.
 
-Fusiona 4 skills de diseno en un pipeline donde **cada una cubre una fase y se refuerzan entre si**:
+Fusiona 4 skills de diseno en un pipeline donde **cada una cubre una fase y se refuerzan entre si**, y 2 guardianes que vigilan que el codigo quede bien hecho:
 
 | Fase | Skill | Aporta | Estrellas |
 |------|-------|--------|-----------|
@@ -64,8 +69,10 @@ Fusiona 4 skills de diseno en un pipeline donde **cada una cubre una fase y se r
 | 2. INTELIGENCIA | **ui-ux-pro-max** | La artesania real de UI/UX: 84 estilos, 192 paletas, 74 fonts, 98 guidelines, motion presets | Repo 122K ★ |
 | 3. EJECUTAR Y REFINAR | **impeccable** | Barra de director de arte, 4 modos, paleta de comandos, verificacion acotada | Award-winning |
 | 4. DARLE VIDA | **animate** | Movimiento con filosofia Emil Kowalski, solo donde se lo gana | Emil Kowalski |
+| 🛡 Guardian (fases 1 y 3) | **shadcn** | Reglas oficiales del equipo shadcn/ui: componentes, formularios, tokens, CLI | Repo 125K ★ |
+| 🛡 Guardian (fase 3) | **reglas-cursor-web** | Buenas practicas por tecnologia: React, Vite, TypeScript, Tailwind, Supabase, Vercel, SEO | CC0 |
 
-**Potenciar no es concatenar.** El output de cada fase es el input de la siguiente: el design read (fase 1) elige el modo de impeccable (fase 3); los dials (fase 1) calibran los `--variance/--motion/--density` de ui-ux-pro-max (fase 2); el tier de motion (fase 2) le dice a animate (fase 4) cuanto presupuesto de movimiento hay; y la barra de calidad de impeccable (fase 3) audita que ninguna de las otras 3 haya dejado un default de IA.
+**Potenciar no es concatenar.** El output de cada fase es el input de la siguiente: el design read (fase 1) elige el modo de impeccable (fase 3); los dials (fase 1) calibran los `--variance/--motion/--density` de ui-ux-pro-max (fase 2); el tier de motion (fase 2) le dice a animate (fase 4) cuanto presupuesto de movimiento hay; y la barra de calidad de impeccable (fase 3) audita que ninguna de las otras 3 haya dejado un default de IA. Los guardianes no agregan fases: **se cargan dentro de la fase 3** para que lo bonito tambien sea codigo correcto y mantenible.
 
 ---
 
@@ -82,7 +89,33 @@ Fusiona 4 skills de diseno en un pipeline donde **cada una cubre una fase y se r
 │ anti-default    │   │ 98 UX rules     │   │ refina/redisena │   │ solo si se gana │
 └─────────────────┘   └─────────────────┘   └─────────────────┘   └─────────────────┘
      el "que"              el "con que"           el "como"            el "que se mueva"
+                                                    ▲
+                                    🛡 shadcn + reglas-cursor-web
+                                    (codigo segun reglas oficiales)
 ```
+
+---
+
+## Como cargar las piezas (funciona en cualquier chat)
+
+Este combo usa otras skills. Estan **junto a esta** en la misma carpeta de skills de Kiro
+(`../<skill>/SKILL.md`). Para cada pieza, en este orden:
+
+1. **Leerla por nombre:** abrir `../<skill>/SKILL.md` (por ejemplo `../taste-skill/SKILL.md`).
+2. **Si no esta ahi, buscarla:**
+   ```bash
+   find / -type f -path "*/<skill>/SKILL.md" -not -path "/proc/*" 2>/dev/null | head -1
+   ```
+3. **Si no existe en este entorno, bajarla** (repo publico `paillamilm-blip/mis-skills`):
+   ```bash
+   git clone -q --depth 1 --filter=blob:none --sparse https://github.com/paillamilm-blip/mis-skills.git /tmp/mis-skills \
+     && git -C /tmp/mis-skills sparse-checkout set .kiro/skills/<skill>
+   # queda en /tmp/mis-skills/.kiro/skills/<skill>/
+   ```
+4. **Si nada de lo anterior funciona** (sin red): avisar en una linea y seguir con el resumen de
+   cada fase que trae este archivo. **Nunca detener el pipeline por una pieza faltante.**
+
+Si un archivo citado por una pieza no esta en su carpeta, buscarlo en el `ARCHIVOS-EXTRA.md` de esa skill.
 
 ---
 
@@ -135,6 +168,11 @@ Si el brief matchea un sistema oficial, **instala y usa el paquete oficial** (no
 | SaaS moderno donde vos sos dueno del codigo | shadcn/ui (`npx shadcn@latest add`) |
 | SaaS/marketing Tailwind moderno (default indie) | Tailwind v4 + `dark:` |
 
+**Si el sistema es shadcn/ui** (o el proyecto ya tiene `components.json`): cargar la skill `shadcn`
+y correr `npx shadcn@latest info --json` para conocer el proyecto (base Radix o Base UI, alias,
+componentes instalados) antes de decidir nada. Si el proyecto usa Radix y se quiere Base UI, eso es
+trabajo aparte: usar `migrate-radix-to-base`, no mezclar ambos.
+
 Estetica (glassmorphism, bento, brutalism, editorial, kinetic type) **no es un sistema**: se construye con CSS nativo + Tailwind y se etiqueta como aproximacion. **Un solo sistema por proyecto.**
 
 **Salida de la fase 1:** design read + valores de los 3 dials + sistema/estetica elegidos. Esto alimenta todo lo demas.
@@ -155,9 +193,17 @@ Con el read y los dials fijados, sacar las decisiones concretas de la base de da
 
 ### 2.2 Generar el design system
 
+`<skill-dir>` = carpeta de skills donde esta `ui-ux-pro-max` (ver "Como cargar las piezas"):
+
+```bash
+SEARCH="$(find / -type f -path '*/ui-ux-pro-max/scripts/search.py' -not -path '/proc/*' 2>/dev/null | head -1)"
+# si queda vacio: bajar la pieza con el sparse-checkout de arriba y usar
+# SEARCH=/tmp/mis-skills/.kiro/skills/ui-ux-pro-max/scripts/search.py
+```
+
 ```bash
 # stack detectado del package.json / pubspec / etc. (nunca asumas el stack)
-python "<skill-dir>/ui-ux-pro-max/scripts/search.py" \
+python3 "$SEARCH" \
   "<product> <industria> <keywords>" --design-system \
   --variance <VARIANCE> --motion <MOTION> --density <DENSITY> \
   -p "Nombre Proyecto" --persist --output-dir "<project-root>"
@@ -168,10 +214,17 @@ Esto devuelve pattern, estilo, colores, tipografia, efectos y anti-patterns, apl
 ### 2.3 Deep-dives por dominio (segun haga falta)
 
 ```bash
-python "<skill-dir>/ui-ux-pro-max/scripts/search.py" "<keyword>" --domain <domain>
+python3 "$SEARCH" "<keyword>" --domain <domain>
+python3 "$SEARCH" "<keyword>" --stack react   # react, shadcn, html-tailwind y nextjs vienen incluidos
 ```
 
+Si `--stack` pide un archivo que no esta (`data/stacks/<stack>.csv`), descargarlo con el enlace de
+`ui-ux-pro-max/ARCHIVOS-EXTRA.md` a esa misma ruta.
+
 `product`, `style`, `color`, `typography`, `google-fonts`, `landing`, `icons`, `gsap`, `ux`, `chart`, y `--stack <stack>` para guias especificas del framework.
+
+> La DB a veces propone defaults que esta skill prohibe (ej. glassmorphism o `#2563EB` generico).
+> La fase 1 manda: si el resultado choca con el design read o con "NUNCA SHIPEAR", descartarlo y decirlo.
 
 ### 2.4 Prioridades UX (1→10, la 1 primero)
 
@@ -194,6 +247,25 @@ Si una busqueda devuelve 0 resultados: reintentar con keywords mas amplias, y si
 ## FASE 3 - EJECUTAR Y REFINAR (impeccable)
 
 Ahora se construye, con barra de director de arte. La fase 3 toma el read (fase 1) y el design system (fase 2) y los ejecuta como codigo production-grade, despues verifica.
+
+### 3.0 Cargar los guardianes (antes de escribir la primera linea)
+
+1. **Detectar el stack** mirando `package.json`, `vite.config.*`, `components.json`, `tailwind.config.*`.
+2. **`reglas-cursor-web`**: leer SOLO las reglas de las tecnologias detectadas (tabla de su SKILL.md;
+   para el stack tipico React + Vite + TS + Tailwind + shadcn: `mdc/react.mdc`, `mdc/vite.mdc`,
+   `mdc/typescript.mdc`, `mdc/tailwind.mdc`, `mdc/shadcn.mdc` y, si es landing,
+   `landing-page-image-quality` + `nextjs-seo-dev` como referencia de SEO).
+3. **`shadcn`** (si el sistema es shadcn): aplicar sus Critical Rules. Las mas importantes aqui:
+   - Usar componentes existentes antes de markup propio (`npx shadcn@latest search`, `add`).
+   - Colores **solo con tokens semanticos** (`bg-primary`, `text-muted-foreground`), nunca `bg-blue-500`.
+   - `gap-*` en vez de `space-x/y-*`; `size-*` si ancho = alto; `cn()` para clases condicionales.
+   - Formularios con `FieldGroup` + `Field`; `Dialog/Sheet/Drawer` siempre con Title.
+4. **Si las reglas del repo ya existente contradicen a un guardian, manda el repo** (avisarlo en una linea).
+
+**Puente fase 2 → shadcn:** la paleta y la tipografia de la fase 2 se aplican **en el tema**, no
+componente por componente. Se escriben como variables CSS (`--primary`, `--background`, `--radius`,
+etc.) siguiendo `shadcn/customization.md`, o con un preset (`npx shadcn@latest apply <code>`).
+Asi el diseno queda unico y los componentes siguen las reglas oficiales.
 
 ### 3.1 Elegir el modo (del design read)
 
@@ -243,7 +315,11 @@ build completo → inspeccionar UNA vez (desktop + mobile juntos, en batch)
 
 No hacer self-QA abierto. Construir del todo, inspeccionar una vez, arreglar en batch, confirmar, parar.
 
-**Salida de la fase 3:** interfaz construida, verificada, con estados completos (loading, empty, error), lista para recibir movimiento.
+En la inspeccion unica, revisar tambien el **checklist de los guardianes**: reglas de shadcn
+cumplidas, tipos de TypeScript sin `any` innecesarios, imagenes optimizadas y con `alt`, y que la
+pagina construya (`npm run build` o el CI del repo).
+
+**Salida de la fase 3:** interfaz construida, verificada, con estados completos (loading, empty, error), codigo segun las reglas del stack, lista para recibir movimiento.
 
 ---
 
@@ -300,11 +376,14 @@ Potenciar significa que las skills se pisan a veces. Aca se resuelven de forma c
 | **taste-skill limita a landing/portfolio/redesign; impeccable cubre dashboards y app UI** | El design read (fase 1) decide: si es landing/portfolio/rediseno, los dials y las reglas de layout de taste-skill mandan. Si es dashboard/app/settings, impeccable modo **Operate** manda y `VISUAL_DENSITY` sube a 7-9. |
 | **ui-ux-pro-max tiene GSAP presets; animate prefiere CSS/Motion y desaconseja librerias pesadas** | El preset de ui-ux-pro-max define el *tier* e intencion (Subtle/Standard/Complex). animate elige la *implementacion*: CSS/Motion salvo que el brief pida choreography real de scroll (pin, Flip, SplitText), unico caso donde entra GSAP. |
 | **impeccable "go all out / bold"; animate "a veces cero lineas de codigo"** | No hay conflicto: bold es sobre composicion visual (fase 3), no sobre cantidad de movimiento. Un diseno puede ser audaz y casi estatico. El gate de animate (fase 4) manda sobre el movimiento. |
+| **shadcn: "`className` para layout, no para estilo"; impeccable/taste: diseno unico y audaz** | La personalidad va en el **tema** (variables CSS / preset / variantes nuevas con `cva`), no en clases sueltas que pisan colores. Para un look que ningun componente cubre: wrapper o variante propia, como indica `shadcn/customization.md`. |
+| **taste-skill sugiere un sistema oficial distinto (Fluent, Material, Carbon) y el repo ya usa shadcn** | Manda el repo: un solo sistema por proyecto. Cambiar de sistema es una decision aparte que se le pregunta al usuario. |
+| **reglas-cursor-web (genericas) vs convenciones del repo** | Manda el repo. Las reglas guian codigo nuevo; no se reescribe codigo existente solo para cumplirlas. |
 | **impeccable verificacion acotada; el instinto de seguir puliendo** | La verificacion acotada gana siempre: build → inspeccionar una vez → arreglar en batch → confirmar → parar. |
 
 ---
 
-## NUNCA SHIPEAR (bans duros de las 4 skills)
+## NUNCA SHIPEAR (bans duros de las 6 skills)
 
 Antes de entregar, chequear que ninguno de estos aparezca. Cada uno es un fail automatico.
 
@@ -339,6 +418,13 @@ Antes de entregar, chequear que ninguno de estos aparezca. Cada uno es un fail a
 | Falta `prefers-reduced-motion` | Variante mas suave, no cero | animate + promax |
 | Todo entra a la vez | Stagger de 30-80ms | animate |
 | Inventar datos / resultado de busqueda de 0 hits | Extraer de fuente real; decir cuando es un default | promax |
+| Colores crudos en componentes (`bg-blue-500`, `text-emerald-600`) | Tokens semanticos (`bg-primary`) o variantes de `Badge` | shadcn |
+| `space-x-*` / `space-y-*` | `flex` + `gap-*` | shadcn |
+| `dark:` manual para colores | Tokens que ya cambian con el tema | shadcn |
+| `div` estilizado donde ya existe componente (callout, empty, badge, separator, skeleton) | `Alert`, `Empty`, `Badge`, `Separator`, `Skeleton` | shadcn |
+| `Dialog` / `Sheet` / `Drawer` sin Title | `DialogTitle` (con `sr-only` si no se ve) | shadcn |
+| Imagen pesada sin dimensiones ni `alt` | WebP/AVIF, `width`/`height`, `loading="lazy"` fuera del hero, `alt` descriptivo | reglas-cursor-web |
+| Entregar sin que el proyecto construya | `npm run build` / CI en verde antes de decir "listo" | reglas-cursor-web |
 
 ---
 
@@ -360,7 +446,9 @@ FASE 2 - INTELIGENCIA (pro-max):
 → Paleta: Zinc base + electric blue acento. Font: Geist + Geist Mono. Estilo: minimal tech.
 → Preset motion: tier Subtle (scroll reveal + stagger, sin choreography)
 
-FASE 3 - EJECUTAR (impeccable):
+FASE 3 - EJECUTAR (impeccable + guardianes):
+→ Guardianes: stack React + Vite + TS + Tailwind + shadcn → reglas react/vite/typescript/tailwind/shadcn.
+   Paleta de la fase 2 escrita como variables del tema (--primary = electric blue).
 → Modo: Persuade (es una landing).
 → shape → layout: hero split (no centrado, VARIANCE 6), logo wall bajo el hero,
    bento con rhythm para features, sin zigzag repetido.
@@ -426,9 +514,10 @@ RESULTADO: un toggle que se siente premium sin animacion de sobra.
 ## Cheat sheet
 
 ```
-1. LEER LA SALA   → design read en 1 linea + 3 dials + elegir sistema (taste)
+0. PIEZAS        → leer ../<skill>/SKILL.md (si falta: find → sparse-checkout → resumen de aqui)
+1. LEER LA SALA   → design read en 1 linea + 3 dials + elegir sistema (taste; shadcn info si aplica)
 2. INTELIGENCIA   → --design-system con los dials como flags + deep-dives (pro-max)
-3. EJECUTAR+REF   → modo + comando + craft-floor + verificacion ACOTADA (impeccable)
+3. EJECUTAR+REF   → guardianes (reglas del stack + shadcn) + modo + comando + verificacion ACOTADA (impeccable)
 4. DARLE VIDA     → gate → proposito → tool mas barato → transform+opacity (animate)
 
 Regla de oro: potenciar = el output de cada fase alimenta la siguiente,
@@ -439,16 +528,23 @@ y la barra de calidad audita que ninguna dejo un default de IA.
 
 ## Skills Referenciadas
 
-| Skill | Ubicacion | Rol en el pipeline |
-|-------|-----------|--------------------|
-| taste-skill | `kiro-skills/03-diseno/taste-skill/SKILL.md` | Fase 1 - Leer la sala |
-| ui-ux-pro-max | `kiro-skills/03-diseno/ui-ux-pro-max/SKILL.md` | Fase 2 - Inteligencia de diseno |
-| impeccable | `kiro-skills/03-diseno/impeccable/SKILL.md` | Fase 3 - Ejecutar y refinar |
-| animate | `kiro-skills/03-diseno/animate/SKILL.md` | Fase 4 - Darle vida |
+Todas se cargan por nombre desde la carpeta de skills (ver "Como cargar las piezas").
+
+| Skill | Ruta junto a esta skill | Rol en el pipeline |
+|-------|-------------------------|--------------------|
+| taste-skill | `../taste-skill/SKILL.md` | Fase 1 - Leer la sala |
+| ui-ux-pro-max | `../ui-ux-pro-max/SKILL.md` | Fase 2 - Inteligencia de diseno |
+| impeccable | `../impeccable/SKILL.md` | Fase 3 - Ejecutar y refinar |
+| animate | `../animate/SKILL.md` | Fase 4 - Darle vida |
+| shadcn | `../shadcn/SKILL.md` | Guardian - reglas oficiales de componentes (fases 1 y 3) |
+| reglas-cursor-web | `../reglas-cursor-web/SKILL.md` | Guardian - buenas practicas del stack (fase 3) |
+| migrate-radix-to-base | `../migrate-radix-to-base/SKILL.md` | Solo si hay que migrar de Radix a Base UI |
+
+En el repo `mis-skills` la fuente esta en `kiro-skills/03-diseno/` y `kiro-skills/04-codigo-calidad/`.
 
 ---
 
-> **OBRA MAESTRA = taste-skill + ui-ux-pro-max + impeccable + animate**
+> **OBRA MAESTRA = taste-skill + ui-ux-pro-max + impeccable + animate (+ shadcn + reglas-cursor-web)**
 >
 > Leer la sala. Sacar la inteligencia. Ejecutar con barra de director. Darle vida solo donde se lo gana.
 > Diseno que no se ve hecho por IA.

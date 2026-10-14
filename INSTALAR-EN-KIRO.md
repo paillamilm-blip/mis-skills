@@ -58,5 +58,8 @@ Si quieres usarlas también en Kiro en tu computador, activa en la misma página
 Kiro acepta **hasta 25 archivos de texto por skill**. Hay 9 skills grandes que traen más:
 `browse`, `ui-styling`, `ui-ux-pro-max`, `design`, `impeccable`, `design-system`, `shadcn`,
 `reglas-cursor-web` y `manim-animation-agent`. Para esas, el paquete lleva lo esencial y un archivo
-`ARCHIVOS-EXTRA.md` con el enlace directo a cada archivo que faltó. Así el agente lo
-descarga solo cuando la tarea lo necesita.
+`ARCHIVOS-EXTRA.md`. Ahí va completa la documentación que no cupo, y los datos o el código que faltan
+aparecen con su enlace directo. Así el agente los descarga solo cuando la tarea los necesita.
+
+Los combos (`obra-maestra`, `automatizar-web`, `clonar`) encuentran sus piezas en cualquier chat.
+Si alguna pieza no está, la descargan sola desde este repositorio.

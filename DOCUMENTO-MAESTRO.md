@@ -25,7 +25,7 @@
 |---|--------|------|------------------|:-----:|----------|
 | 1 | 🏗️ **CONSTRUIR** | combo | Office Hours → Autoplan → Spec → GSD+Incremental → Ultra Review → Ship | **95** | full-stack |
 | 2 | 🔎 **INVESTIGAR** | combo | Agent Reach (leer web/redes) → ScrapeGraph (extraer JSON) → Superpowers (sintetizar) | **93** | research |
-| 3 | 🎨 **OBRA MAESTRA** | combo⚙️ | taste → ui-ux-pro-max → impeccable → animate *(ya es skill real)* | **92** | diseño |
+| 3 | 🎨 **OBRA MAESTRA** | combo⚙️ | taste → ui-ux-pro-max → impeccable (+ shadcn + reglas-cursor-web) → animate *(ya es skill real)* | **92** | diseño |
 | 4 | 🐛 **CAZA-BUGS** ⟳ | loop | Investigate → Superpowers → fix (GSD) → QA → *si falla* ⟳ vuelve al fix | **90** | debugging |
 | 5 | 🛡️ **CONTROL** ⟳ | loop | Buscar fallas de seguridad con Strix → arreglar la más grave → volver a escanear → repetir hasta que no queden fallas graves | **89** | seguridad |
 | 6 | ⚡ **CERO DEFECTOS** ⟳ | loop | Hacer la tarea rápido y simple → revisar si de verdad quedó terminada → si falta algo, corregir y volver a revisar hasta que esté OK | **88** | ejecución |

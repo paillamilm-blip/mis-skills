@@ -294,4 +294,4 @@ npx shadcn@latest view owner/repo/item
 - [design-system-page.md](./design-system-page.md): What goes on a design system page and how: foundations, component tiers, pinned state matrices, contrast pairs, edge cases, do/don't, recipes
 
 ---
-> 📦 Archivos adicionales de esta skill (datos, binarios o código) están en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md) con su enlace directo para descargarlos.
+> 📦 **Si un archivo que cita esta skill no está en la carpeta**, búscalo en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md): la documentación viene incluida ahí completa y los datos/código tienen su enlace directo para descargarlos.
