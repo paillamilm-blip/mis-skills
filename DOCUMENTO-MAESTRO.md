@@ -1,7 +1,7 @@
 # 🧠 DOCUMENTO MAESTRO — Mis Skills + Combos + Cadenas
 
 > Todo lo que necesitás para trabajar con Kiro en una sola página.  
-> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 115 skills en 12 segmentos
+> Autor: paillamilm-blip | Última actualización: Septiembre 2026 · 118 skills en 12 segmentos
 
 ---
 
@@ -167,7 +167,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 
 ---
 
-## 📚 BIBLIOTECA COMPLETA (115 skills en 12 segmentos)
+## 📚 BIBLIOTECA COMPLETA (118 skills en 12 segmentos)
 
 > Guardadas en github.com/paillamilm-blip/mis-skills  
 > Copiás la que necesitás, la usás, la sacás.  
@@ -208,7 +208,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | Context Save | Guardar sesión |
 | Context Restore | Recuperar sesión |
 
-### 03 — Diseño (16)
+### 03 — Diseño (17)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -227,8 +227,9 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | Design Consultation | Research + propuesta completa |
 | Design Review | Auditoría de diseño |
 | Design Shotgun | Múltiples variantes rápidas |
+| **shadcn Oficial** | Skills oficiales del equipo shadcn/ui: componentes, formularios, estilos, CLI, MCP, migrar Radix→Base |
 
-### 04 — Código y Calidad (8)
+### 04 — Código y Calidad (9)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -240,6 +241,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | API & Interface Design | APIs REST/GraphQL estables |
 | Receiving Code Review | Recibir feedback con rigor |
 | Requesting Code Review | Pedir review estructurado |
+| **Reglas Cursor Web** | 28 reglas de buenas prácticas (React, Vite, TS, Tailwind, shadcn, Supabase, Vercel, SEO, landing) |
 
 ### 05 — Testing y QA (12)
 
@@ -328,7 +330,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 |-------|----------|
 | ADN Digital | CV → perfil JSON para el gemelo |
 
-### 12 — Marketing y Content (11)
+### 12 — Marketing y Content (12)
 
 | Skill | Qué hace |
 |-------|----------|
@@ -343,6 +345,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | Changelog | Historial de cambios pro |
 | Presentation | Slidev deck técnico |
 | Teach Me | Crear cursos/tutorials |
+| **Motor de Videos Manim** | Video explicativo animado con voz IA y subtítulos, horizontal o vertical — 5 sub-skills (manim, voiceover, agente, shorts, tutorial) |
 
 ---
 
@@ -356,7 +359,7 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | Firecrawl | 171,686 | 5 |
 | gstack (Garry Tan / YC) | 129,432 | 26 |
 | UI/UX Pro Max | 120,492 | 1 |
-| shadcn/ui (ref) | 121,998 | 1 |
+| shadcn/ui (ref + skills oficiales) | 125,585 | 2 |
 | Ponytail | 109,534 | 4 |
 | Agent Skills (Addy Osmani) | 89,430 | 17 |
 | Impeccable (pbakaus) | 62,158 | 1 |
@@ -369,6 +372,13 @@ Kiro: investiga → arregla → testea → si falla, vuelve a arreglar (⟳)
 | usestrix/strix (pentesting IA) | — | 1 (9 sub-skills) |
 | ScrapeGraphAI (scraping IA) | — | 1 |
 | Agent Reach (Panniantong) | — | 1 |
+| ManimCommunity/manim | 41,523 | 1 (paraguas motor de videos, 5 sub-skills) |
+| PatrickJS/awesome-cursorrules | 40,910 | 1 (reglas Cursor web, compartida) |
+| sanjeed5/awesome-cursor-rules-mdc | 3,572 | (reglas Cursor web, compartida) |
+| ManimCommunity/manim-voiceover | 320 | (sub-skill motor de videos) |
+| Elteoremadebeethoven/ManimCE-tutorial | 34 | (sub-skill motor de videos, solo enlaces) |
+| ManojINaik/manimAnimationAgent | 12 | (sub-skill motor de videos) |
+| ghost1412/shorts-generator | 7 | (sub-skill motor de videos) |
 
 ---
 

@@ -1,4 +1,4 @@
-# ⚡ Comandos Rápidos — Referencia de las 115 Skills
+# ⚡ Comandos Rápidos — Referencia de las 118 Skills
 
 > Copia y pega el comando exacto cuando trabajes con Kiro o cualquier agente IA.
 > Organizado por segmento. Cada skill tiene: trigger, qué le decís, y cuándo usarla.
@@ -12,8 +12,8 @@
 |---|----------|--------|----------|
 | 01 | [Estrategia](#01--estrategia) | 14 | Pensar, planificar, especificar |
 | 02 | [Ejecución](#02--ejecución) | 15 | Modos de trabajo y productividad |
-| 03 | [Diseño](#03--diseño) | 16 | UI/UX, marca, visual |
-| 04 | [Código y Calidad](#04--código-y-calidad) | 8 | Reviews y simplificación |
+| 03 | [Diseño](#03--diseño) | 17 | UI/UX, marca, visual |
+| 04 | [Código y Calidad](#04--código-y-calidad) | 9 | Reviews y simplificación |
 | 05 | [Testing y QA](#05--testing-y-qa) | 12 | Tests, debugging, performance |
 | 06 | [Seguridad](#06--seguridad) | 6 | Hardening, auditorías, pentesting |
 | 07 | [Deploy y Ship](#07--deploy-y-ship) | 8 | CI/CD, releases, deployment |
@@ -21,7 +21,7 @@
 | 09 | [Documentación](#09--documentación) | 6 | Docs, ADRs, diagramas |
 | 10 | [Utilidades](#10--utilidades) | 4 | Meta-skills, APIs, memoria |
 | 11 | [Producto](#11--producto) | 1 | Específico de Sistema Ómicron |
-| 12 | [Marketing y Content](#12--marketing-y-content) | 11 | Briefs, blog, social, PRD |
+| 12 | [Marketing y Content](#12--marketing-y-content) | 12 | Briefs, blog, social, PRD, videos |
 
 ---
 
@@ -94,6 +94,7 @@
 | 14 | **Design Review (gstack)** | `"Revisá el diseño de esta implementación"` | Auditoría de diseño sobre código existente |
 | 15 | **Design Shotgun** | `"Dame variantes de diseño"` / `"Múltiples opciones"` | Genera varias opciones rápidas para comparar |
 | 16 | **Obra Maestra** (combo) | `"OBRA MAESTRA [qué diseñar]"` / `"Diseño pro"` | 🏆 Combo potenciado: taste + pro-max + impeccable + animate en 1 pipeline |
+| 17 | **shadcn Oficial** | `"Agrega [componente] con shadcn"` / `"shadcn init"` | Reglas oficiales shadcn/ui para la web de captación |
 
 ---
 
@@ -111,6 +112,7 @@
 | 6 | **API & Interface Design** | `"Diseñá esta API"` / `"Contratos entre módulos"` | REST, GraphQL, type contracts, boundaries |
 | 7 | **Requesting Code Review** | `"Pedí review de este cambio"` | Preparar un cambio para que lo revisen bien |
 | 8 | **Receiving Code Review** | `"Ayudame a procesar este review"` | Recibir e incorporar feedback con rigor |
+| 9 | **Reglas Cursor Web** | `"Aplica las reglas de [React/Vite/Tailwind/Supabase]"` | Buenas prácticas por tecnología antes de codear o revisar frontend |
 
 ---
 
@@ -245,6 +247,7 @@
 | 9 | **Changelog** | `"Changelog de estos cambios"` | Historial de cambios profesional |
 | 10 | **Presentation** | `"Deck técnico con Slidev"` | Presentación técnica |
 | 11 | **Teach Me** | `"Creá un curso/tutorial de..."` | Generar cursos o tutoriales |
+| 12 | **Motor de Videos Manim** | `"Video explicativo de [tema] con voz"` / `"Short vertical de [tema]"` | Animación Manim + voz IA (Gemini) + subtítulos + formato 9:16 |
 
 ---
 
