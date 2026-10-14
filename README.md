@@ -1,6 +1,6 @@
 # 🧠 Mis Skills
 
-> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 115 skills de IA.
+> Repositorio personal para documentar y organizar todas mis habilidades profesionales + 118 skills de IA.
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🧠 Kiro Skills — 115 skills en 12 segmentos
+## 🧠 Kiro Skills — 118 skills en 12 segmentos
 
 > Conteo oficial: cada **skill** = una carpeta de nivel superior dentro de un segmento
 > (la unidad que copias/instalas). Recuento reproducible con
@@ -29,8 +29,8 @@
 |---|----------|--------|----------|
 | 01 | 🧠 [Estrategia](./kiro-skills/01-estrategia/) | 14 | Pensar, planificar, especificar |
 | 02 | 🚀 [Ejecución](./kiro-skills/02-ejecucion/) | 15 | Modos de trabajo: rápido, simple, cuidadoso |
-| 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 16 | UI/UX, marca, animaciones |
-| 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 8 | Reviews, simplificación |
+| 03 | 🎨 [Diseño](./kiro-skills/03-diseno/) | 17 | UI/UX, marca, animaciones, shadcn oficial |
+| 04 | 🔍 [Código y Calidad](./kiro-skills/04-codigo-calidad/) | 9 | Reviews, simplificación, reglas Cursor web |
 | 05 | 🧪 [Testing y QA](./kiro-skills/05-testing-qa/) | 12 | Tests, debugging, performance |
 | 06 | 🛡️ [Seguridad](./kiro-skills/06-seguridad/) | 6 | Auditorías, hardening, pentesting IA (Strix) |
 | 07 | 🚀 [Deploy y Ship](./kiro-skills/07-deploy-ship/) | 8 | CI/CD, releases |
@@ -38,7 +38,7 @@
 | 09 | 📝 [Documentación](./kiro-skills/09-documentacion/) | 6 | Docs, ADRs, diagramas |
 | 10 | 🛠️ [Utilidades](./kiro-skills/10-utilidades/) | 4 | Meta-skills, APIs |
 | 11 | 🧬 [Producto](./kiro-skills/11-producto/) | 1 | Específico de negocio |
-| 12 | 📣 [Marketing y Content](./kiro-skills/12-marketing-content/) | 11 | Briefs, blog, social, PRD |
+| 12 | 📣 [Marketing y Content](./kiro-skills/12-marketing-content/) | 12 | Briefs, blog, social, PRD, motor de videos Manim |
 
 ### 📚 Guías rápidas:
 - [⚡ COMANDOS](./kiro-skills/COMANDOS.md) — Qué decirle al agente para activar cada skill
@@ -66,7 +66,7 @@
 - **Certificaciones:** 0
 - **Proyectos:** 1
 - **Idiomas:** 1
-- **🧠 Kiro Skills (IA):** 115 (12 segmentos, 17 fuentes)
+- **🧠 Kiro Skills (IA):** 118 (12 segmentos, 24 fuentes)
 
 ---
 
