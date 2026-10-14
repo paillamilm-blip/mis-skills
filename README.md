@@ -14,7 +14,10 @@
 | [🎓 certificaciones/](./certificaciones/) | Certificaciones y cursos completados |
 | [🚀 proyectos/](./proyectos/) | Proyectos destacados donde apliqué mis skills |
 | [🌍 idiomas/](./idiomas/) | Idiomas y nivel de dominio |
-| [🧠 kiro-skills/](./kiro-skills/) | **86 skills de IA** organizadas en 11 segmentos |
+| [🧠 kiro-skills/](./kiro-skills/) | **118 skills de IA** organizadas en 12 segmentos (fuente, para editar) |
+| `.kiro/skills/` | **Paquete listo para Kiro**: 140 skills planas (generado, no editar a mano) |
+| [📇 CATALOGO-KIRO.md](./CATALOGO-KIRO.md) | Índice de las 140 skills con su comando `/nombre` |
+| [✅ INSTALAR-EN-KIRO.md](./INSTALAR-EN-KIRO.md) | Cómo usarlas en **todos** tus chats de Kiro |
 | [📝 templates/](./templates/) | Plantillas para agregar nuevas skills |
 
 ---
@@ -41,6 +44,8 @@
 | 12 | 📣 [Marketing y Content](./kiro-skills/12-marketing-content/) | 12 | Briefs, blog, social, PRD, motor de videos Manim |
 
 ### 📚 Guías rápidas:
+- [✅ INSTALAR EN KIRO](./INSTALAR-EN-KIRO.md) — Dejarlas disponibles en todos tus chats (1 vez)
+- [📇 CATÁLOGO](./CATALOGO-KIRO.md) — Las 140 skills con su comando `/nombre`
 - [⚡ COMANDOS](./kiro-skills/COMANDOS.md) — Qué decirle al agente para activar cada skill
 - [🔥 COMBINACIONES](./kiro-skills/COMBINACIONES.md) — Los mejores combos por situación
 - [📖 GUÍA COMPLETA](./kiro-skills/GUIA_COMPLETA.md) — Descripción detallada de cada skill
