@@ -1,7 +1,8 @@
 # 🧠 Kiro Skills — Biblioteca Completa
 
-> 86 skills organizadas en 11 segmentos para desarrollo asistido por IA.  
-> 3 fuentes: propias + [Addy Osmani](https://github.com/addyosmani/agent-skills) + [Garry Tan / gstack](https://github.com/garrytan/gstack)
+> 118 skills organizadas en 12 segmentos para desarrollo asistido por IA (24 fuentes).  
+> Esta carpeta es la **fuente** (ordenada por segmento). El paquete listo para Kiro está en
+> `.kiro/skills/` → ver [INSTALAR-EN-KIRO.md](../INSTALAR-EN-KIRO.md) y [CATALOGO-KIRO.md](../CATALOGO-KIRO.md).
 
 ---
 
@@ -19,19 +20,20 @@
 
 | # | Segmento | Skills | Carpeta | Para qué |
 |---|----------|--------|---------|----------|
-| 01 | 🧠 **Estrategia** | 15 | [`01-estrategia/`](./01-estrategia/) | Pensar, planificar, especificar, validar |
-| 02 | 🚀 **Ejecución** | 14 | [`02-ejecucion/`](./02-ejecucion/) | Modos de trabajo: rápido, simple, cuidadoso |
-| 03 | 🎨 **Diseño** | 15 | [`03-diseno/`](./03-diseno/) | UI/UX, marca, animaciones, landing pages |
-| 04 | 🔍 **Código y Calidad** | 7 | [`04-codigo-calidad/`](./04-codigo-calidad/) | Reviews, simplificación, APIs |
-| 05 | 🧪 **Testing y QA** | 10 | [`05-testing-qa/`](./05-testing-qa/) | Tests, debugging, performance, retros |
-| 06 | 🛡️ **Seguridad** | 5 | [`06-seguridad/`](./06-seguridad/) | Auditorías, hardening, protección |
-| 07 | 🚀 **Deploy y Ship** | 7 | [`07-deploy-ship/`](./07-deploy-ship/) | CI/CD, releases, versioning |
-| 08 | 🤖 **Automatización** | 3 | [`08-automatizacion/`](./08-automatizacion/) | Browser automation, scraping |
+| 01 | 🧠 **Estrategia** | 14 | [`01-estrategia/`](./01-estrategia/) | Pensar, planificar, especificar, validar |
+| 02 | 🚀 **Ejecución** | 15 | [`02-ejecucion/`](./02-ejecucion/) | Modos de trabajo: rápido, simple, cuidadoso |
+| 03 | 🎨 **Diseño** | 17 | [`03-diseno/`](./03-diseno/) | UI/UX, marca, animaciones, landing pages |
+| 04 | 🔍 **Código y Calidad** | 9 | [`04-codigo-calidad/`](./04-codigo-calidad/) | Reviews, simplificación, APIs |
+| 05 | 🧪 **Testing y QA** | 12 | [`05-testing-qa/`](./05-testing-qa/) | Tests, debugging, performance, retros |
+| 06 | 🛡️ **Seguridad** | 6 | [`06-seguridad/`](./06-seguridad/) | Auditorías, hardening, protección |
+| 07 | 🚀 **Deploy y Ship** | 8 | [`07-deploy-ship/`](./07-deploy-ship/) | CI/CD, releases, versioning |
+| 08 | 🤖 **Automatización** | 14 | [`08-automatizacion/`](./08-automatizacion/) | Browser automation, scraping |
 | 09 | 📝 **Documentación** | 6 | [`09-documentacion/`](./09-documentacion/) | Docs, ADRs, diagramas, release notes |
-| 10 | 🛠️ **Utilidades** | 5 | [`10-utilidades/`](./10-utilidades/) | Meta-skills, APIs, memoria de código |
+| 10 | 🛠️ **Utilidades** | 4 | [`10-utilidades/`](./10-utilidades/) | Meta-skills, APIs, memoria de código |
 | 11 | 🧬 **Producto** | 1 | [`11-producto/`](./11-producto/) | Skills específicas del negocio |
+| 12 | 📣 **Marketing y Content** | 12 | [`12-marketing-content/`](./12-marketing-content/) | Briefs, blog, social, PRD, motor de videos |
 
-**Total: 86 skills | 757 archivos | 3 fuentes**
+**Total: 118 skills | 12 segmentos** (recuento: `scripts/contar-skills.sh`)
 
 ---
 
@@ -67,6 +69,15 @@
 ---
 
 ## 🏗️ Cómo instalar skills en un proyecto
+
+> **Recomendado:** subir el paquete `.kiro/skills/` a tu cuenta de Kiro una sola vez → [INSTALAR-EN-KIRO.md](../INSTALAR-EN-KIRO.md).
+> Para copiar a un proyecto, usa el paquete plano (las skills paraguas como Strix ya vienen separadas):
+
+```bash
+cp -r mis-skills/.kiro/skills/gsd mi-proyecto/.kiro/skills/
+```
+
+Copiar desde la fuente (por segmento):
 
 ```bash
 # Clonar la biblioteca
