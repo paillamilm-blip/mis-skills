@@ -312,4 +312,4 @@ pip install google-genai pillow
 **Related Skills:** frontend-design, ui-ux-pro-max, ai-multimodal, chrome-devtools
 
 ---
-> 📦 Archivos adicionales de esta skill (datos, binarios o código) están en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md) con su enlace directo para descargarlos.
+> 📦 **Si un archivo que cita esta skill no está en la carpeta**, búscalo en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md): la documentación viene incluida ahí completa y los datos/código tienen su enlace directo para descargarlos.

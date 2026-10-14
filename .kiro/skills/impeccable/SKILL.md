@@ -80,4 +80,4 @@ After init writes PRODUCT.md, resume without rerunning `context.mjs`; init loads
 **Never repair drift as a side effect of a design task.** A `CONTEXT_STALE` finding is reported, not acted on, unless the user asks. The one exception is a finding marked `auto`, which the next write to that file performs anyway.
 
 ---
-> 📦 Archivos adicionales de esta skill (datos, binarios o código) están en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md) con su enlace directo para descargarlos.
+> 📦 **Si un archivo que cita esta skill no está en la carpeta**, búscalo en [ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md): la documentación viene incluida ahí completa y los datos/código tienen su enlace directo para descargarlos.

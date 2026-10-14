@@ -40,6 +40,24 @@ NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 PREFIJAR = {"agent-browser"}
 # Casos donde el SKILL.md vive en una subcarpeta pero representa a la skill completa.
 SKILL_COMPLETA = {"leankg": "skills/usage"}
+# Archivos que no se usan en tiempo de ejecución (duplicados, tests): no se empaquetan.
+EXCLUIR = {
+    "ui-ux-pro-max": ("src-data/", "scripts/tests/", "scripts/validate_data.py"),
+}
+# Extensiones cuyo contenido se copia dentro de ARCHIVOS-EXTRA.md cuando no caben
+# (documentación). Código y datos se dejan como enlace para descargarlos como archivo.
+INLINE_EXT = (".md", ".mdc", ".txt")
+# Archivos que deben quedar sí o sí en el paquete (stack del usuario: React/Vite/Tailwind/shadcn).
+PRIORIZAR = {
+    "ui-ux-pro-max": ("data/stacks/react.csv", "data/stacks/shadcn.csv",
+                      "data/stacks/html-tailwind.csv", "data/stacks/nextjs.csv",
+                      "references/pro-rules.md", "references/quick-reference.md"),
+    "reglas-cursor-web": tuple(f"mdc/{x}.mdc" for x in
+                               ("react", "vite", "typescript", "tailwind", "shadcn", "supabase", "vercel"))
+    + ("cursorrules/typescript-vite-tailwind-cursorrules-prompt-file.mdc",
+       "cursorrules/landing-page-image-quality-cursorrules-prompt-file.mdc",
+       "cursorrules/nextjs-seo-dev-cursorrules-prompt-file.mdc"),
+}
 
 
 def es_skill_md(nombre: str) -> bool:
@@ -208,6 +226,8 @@ def main() -> int:
 
         otras = carpetas_skill - {carpeta}
         archivos = archivos_de(contenido, skill_md, otras)
+        omitir = EXCLUIR.get(nombre, ())
+        archivos = [p for p in archivos if not os.path.relpath(p, contenido).startswith(omitir)]
         textos = [p for p in archivos if es_texto(p) and os.path.getsize(p) <= MAX_BYTES]
         excluidos = [p for p in archivos if p not in textos]
 
@@ -218,7 +238,9 @@ def main() -> int:
             def prioridad(p):
                 rel = os.path.relpath(p, contenido)
                 citado = rel in texto or os.path.basename(p) in texto
-                return (0 if citado else 1, rel.count(os.sep), os.path.getsize(p))
+                doc = p.endswith(INLINE_EXT)  # la documentación se puede incrustar
+                fijo = rel in PRIORIZAR.get(nombre, ())
+                return (not fijo, doc, 0 if citado else 1, rel.count(os.sep), os.path.getsize(p))
             textos.sort(key=prioridad)
             excluidos += textos[cupo:]
             textos = textos[:cupo]
@@ -226,8 +248,9 @@ def main() -> int:
         if excluidos:
             avisos.append(f"{nombre}: {len(excluidos)} archivo(s) fuera del paquete -> ARCHIVOS-EXTRA.md")
             texto = texto.rstrip() + (
-                "\n\n---\n> 📦 Archivos adicionales de esta skill (datos, binarios o código) están en "
-                "[ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md) con su enlace directo para descargarlos.\n"
+                "\n\n---\n> 📦 **Si un archivo que cita esta skill no está en la carpeta**, búscalo en "
+                "[ARCHIVOS-EXTRA.md](./ARCHIVOS-EXTRA.md): la documentación viene incluida ahí completa y "
+                "los datos/código tienen su enlace directo para descargarlos.\n"
             )
 
         if solo_check:
@@ -241,18 +264,29 @@ def main() -> int:
             os.makedirs(os.path.dirname(os.path.join(destino, rel)), exist_ok=True)
             shutil.copy2(p, os.path.join(destino, rel))
         if excluidos:
+            incrustar, tam = [], 0
+            for p in sorted(excluidos):
+                if p.endswith(INLINE_EXT) and es_texto(p) and tam + os.path.getsize(p) < MAX_BYTES - 200_000:
+                    incrustar.append(p)
+                    tam += os.path.getsize(p)
             lineas = [
                 f"# Archivos extra de `{nombre}`\n",
-                "No caben en el paquete de Kiro (máx. 25 archivos de texto por skill). "
-                "Descárgalos solo si la tarea los necesita, por ejemplo:\n",
-                "```bash\ncurl -fsSLO <enlace>\n```\n",
-                "| Archivo | Enlace |",
-                "|---------|--------|",
+                "No caben en el paquete de Kiro (máx. 25 archivos por skill).",
+                "- **Documentación** (✅ incluida): su contenido completo está más abajo en este archivo.",
+                "- **Datos / código / binarios** (⬇️): descárgalos a la ruta indicada solo si la tarea los necesita:\n",
+                "```bash\nmkdir -p \"$(dirname <archivo>)\" && curl -fsSL <enlace> -o <archivo>\n```\n",
+                "| Archivo | Estado | Enlace |",
+                "|---------|--------|--------|",
             ]
             for p in sorted(excluidos):
                 rel = os.path.relpath(p, contenido)
                 url = RAW + os.path.relpath(p, ROOT).replace(os.sep, "/").replace(" ", "%20")
-                lineas.append(f"| `{rel}` | {url} |")
+                estado = "✅ incluida abajo" if p in incrustar else "⬇️ descargar"
+                lineas.append(f"| `{rel}` | {estado} | {url} |")
+            for p in incrustar:
+                rel = os.path.relpath(p, contenido)
+                cuerpo = open(p, encoding="utf-8").read().rstrip()
+                lineas += ["", "---", "", f"## 📄 `{rel}`", "", cuerpo]
             with open(os.path.join(destino, "ARCHIVOS-EXTRA.md"), "w", encoding="utf-8") as f:
                 f.write("\n".join(lineas) + "\n")
 

@@ -244,7 +244,22 @@ Score fidelidad: visual 9/10, interaccion 8/10, responsive 9/10
 
 ## Skills Referenciadas
 
-- `kiro-skills/08-automatizacion/ai-website-cloner-template/` - Pipeline de reconstruccion AI
-- `kiro-skills/08-automatizacion/claude-skill-web-clone/` - Metodologia fuente-real
-- `kiro-skills/08-automatizacion/browse/` - Browser automation para recon
-- `kiro-skills/08-automatizacion/scrape/` - Extraccion de datos complementaria
+- `../ai-website-cloner-template/SKILL.md` - Pipeline de reconstruccion AI
+- `../claude-skill-web-clone/SKILL.md` - Metodologia fuente-real
+- `../browse/SKILL.md` - Browser automation para recon
+- `../scrape/SKILL.md` - Extraccion de datos complementaria
+
+### Como cargar las piezas (funciona en cualquier chat)
+
+Las piezas estan **junto a esta skill** en la carpeta de skills de Kiro (`../<skill>/SKILL.md`). Para cada una:
+
+1. Abrir `../<skill>/SKILL.md`.
+2. Si no esta: `find / -type f -path "*/<skill>/SKILL.md" -not -path "/proc/*" 2>/dev/null | head -1`
+3. Si no existe en este entorno, bajarla del repo publico:
+   ```bash
+   git clone -q --depth 1 --filter=blob:none --sparse https://github.com/paillamilm-blip/mis-skills.git /tmp/mis-skills \
+     && git -C /tmp/mis-skills sparse-checkout set .kiro/skills/<skill>
+   ```
+4. Sin red: avisar en una linea y seguir con lo que resume este archivo. Nunca detenerse por una pieza faltante.
+
+En el repo `mis-skills` la fuente esta en `kiro-skills/08-automatizacion/`.
