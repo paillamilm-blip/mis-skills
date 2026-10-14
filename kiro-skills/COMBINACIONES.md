@@ -22,7 +22,7 @@
 |---|--------|------|------------------|:-----:|
 | 1 | 🏗️ **CONSTRUIR** | combo | Office Hours → Autoplan → Spec → GSD+Incremental → Ultra Review → Ship | **95** |
 | 2 | 🔎 **INVESTIGAR** | combo | Agent Reach → ScrapeGraph → Superpowers (síntesis) | **93** |
-| 3 | 🎨 **OBRA MAESTRA** | combo ⚙️ | taste → ui-ux-pro-max → impeccable → animate | **92** |
+| 3 | 🎨 **OBRA MAESTRA** | combo ⚙️ | taste → ui-ux-pro-max → impeccable (+ shadcn + reglas-cursor-web) → animate | **92** |
 | 4 | 🐛 **CAZA-BUGS** | loop ⟳ | Investigate → Superpowers → fix → QA → *si falla* ⟳ | **90** |
 | 5 | 🛡️ **CONTROL** | loop ⟳ | Buscar fallas con Strix → arreglar la más grave → re-escanear → repetir hasta que no queden graves | **89** |
 | 6 | ⚡ **CERO DEFECTOS** | loop ⟳ | Hacer rápido y simple → autoverificar que quedó completo → corregir → repetir hasta que está OK | **88** |
