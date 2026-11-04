@@ -1,7 +1,7 @@
 # 📇 Catálogo de skills para Kiro
 
 > Generado por `scripts/preparar-kiro-skills.py` — no editar a mano.
-> 146 skills instalables en `.kiro/skills/`. Úsalas por su nombre con `/nombre`
+> 147 skills instalables en `.kiro/skills/`. Úsalas por su nombre con `/nombre`
 > o simplemente pidiendo la tarea: Kiro activa la skill cuya descripción coincide.
 > Cómo instalarlas en todos tus chats: [INSTALAR-EN-KIRO.md](./INSTALAR-EN-KIRO.md).
 
@@ -45,7 +45,7 @@
 | [`/source-driven-development`](./.kiro/skills/source-driven-development/SKILL.md) | Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when… |
 | [`/subagent-driven-development`](./.kiro/skills/subagent-driven-development/SKILL.md) | Use when executing implementation plans with independent tasks in the current session |
 
-## 🎨 03 — Diseño (23)
+## 🎨 03 — Diseño (24)
 
 | Comando | Qué hace |
 |---------|----------|
@@ -64,6 +64,7 @@
 | [`/image-to-code`](./.kiro/skills/image-to-code/SKILL.md) | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then… |
 | [`/impeccable`](./.kiro/skills/impeccable/SKILL.md) | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or… |
 | [`/obra-maestra`](./.kiro/skills/obra-maestra/SKILL.md) | COMBO POTENCIADO: Diseno frontend de nivel award, 4 skills de diseno + 2 guardianes de codigo en un solo pipeline. Combina taste-skill (leer el brief, dials… |
+| [`/obra-maestra-brutal`](./.kiro/skills/obra-maestra-brutal/SKILL.md) | COMBO BRUTAL de diseno visual. Fusiona en un solo pipeline todas las skills de diseno del repo: design-taste-frontend (taste v2, direccion de arte… |
 | [`/migrate-radix-to-base`](./.kiro/skills/migrate-radix-to-base/SKILL.md) | Migrates React projects and components from Radix UI to Base UI. Use when asked to migrate from radix, move to base-ui, convert radix primitives, or switch… |
 | [`/shadcn`](./.kiro/skills/shadcn/SKILL.md) | Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project… |
 | [`/slides`](./.kiro/skills/slides/SKILL.md) | Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies. |
