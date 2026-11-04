@@ -1,7 +1,7 @@
 # 📇 Catálogo de skills para Kiro
 
 > Generado por `scripts/preparar-kiro-skills.py` — no editar a mano.
-> 140 skills instalables en `.kiro/skills/`. Úsalas por su nombre con `/nombre`
+> 146 skills instalables en `.kiro/skills/`. Úsalas por su nombre con `/nombre`
 > o simplemente pidiendo la tarea: Kiro activa la skill cuya descripción coincide.
 > Cómo instalarlas en todos tus chats: [INSTALAR-EN-KIRO.md](./INSTALAR-EN-KIRO.md).
 
@@ -45,11 +45,13 @@
 | [`/source-driven-development`](./.kiro/skills/source-driven-development/SKILL.md) | Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when… |
 | [`/subagent-driven-development`](./.kiro/skills/subagent-driven-development/SKILL.md) | Use when executing implementation plans with independent tasks in the current session |
 
-## 🎨 03 — Diseño (18)
+## 🎨 03 — Diseño (23)
 
 | Comando | Qué hace |
 |---------|----------|
 | [`/animate`](./.kiro/skills/animate/SKILL.md) | Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which… |
+| [`/archify`](./.kiro/skills/archify/SKILL.md) | Create validated architecture, workflow, sequence, data-flow, lifecycle/state, ERD, class, tree, timeline, and waterfall diagrams as explorable standalone… |
+| [`/awesome-design-md`](./.kiro/skills/awesome-design-md/SKILL.md) | Biblioteca de ~84 DESIGN.md (sistemas de diseño en markdown) extraídos de sitios conocidos como Stripe, Vercel, Apple, Airbnb, Linear, Notion, etc. Use when… |
 | [`/banner-design`](./.kiro/skills/banner-design/SKILL.md) | Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design,… |
 | [`/brand`](./.kiro/skills/brand/SKILL.md) | Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets,… |
 | [`/design`](./.kiro/skills/design/SKILL.md) | Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliverables,… |
@@ -57,7 +59,9 @@
 | [`/design-review-gstack`](./.kiro/skills/design-review-gstack/SKILL.md) | Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack) |
 | [`/design-shotgun`](./.kiro/skills/design-shotgun/SKILL.md) | Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack) |
 | [`/design-system`](./.kiro/skills/design-system/SKILL.md) | Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography… |
+| [`/design-taste-frontend`](./.kiro/skills/design-taste-frontend/SKILL.md) | tasteskill v2, the anti-slop frontend skill. Art direction for websites, distilled from a study of 247 curated gallery sites (One Page Love, Awwwards Sites… |
 | [`/frontend-ui-engineering`](./.kiro/skills/frontend-ui-engineering/SKILL.md) | Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing… |
+| [`/image-to-code`](./.kiro/skills/image-to-code/SKILL.md) | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then… |
 | [`/impeccable`](./.kiro/skills/impeccable/SKILL.md) | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or… |
 | [`/obra-maestra`](./.kiro/skills/obra-maestra/SKILL.md) | COMBO POTENCIADO: Diseno frontend de nivel award, 4 skills de diseno + 2 guardianes de codigo en un solo pipeline. Combina taste-skill (leer el brief, dials… |
 | [`/migrate-radix-to-base`](./.kiro/skills/migrate-radix-to-base/SKILL.md) | Migrates React projects and components from Radix UI to Base UI. Use when asked to migrate from radix, move to base-ui, convert radix primitives, or switch… |
@@ -67,6 +71,7 @@
 | [`/ui-styling`](./.kiro/skills/ui-styling/SKILL.md) | Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based… |
 | [`/ui-ux-pro-max`](./.kiro/skills/ui-ux-pro-max/SKILL.md) | UI/UX design intelligence for web and mobile. Searchable local database with 84 styles, 192 color palettes, 74 font pairings, 192 product types, 98 UX… |
 | [`/ui-verification`](./.kiro/skills/ui-verification/SKILL.md) | Verify whether a live web app matches its design specification using deterministic CSS checks against the DOM, AND verify user flows by executing Gherkin… |
+| [`/web-design-guidelines`](./.kiro/skills/web-design-guidelines/SKILL.md) | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my… |
 
 ## 🔍 04 — Código y Calidad (9)
 
@@ -82,7 +87,7 @@
 | [`/requesting-code-review`](./.kiro/skills/requesting-code-review/SKILL.md) | Use when completing tasks, implementing major features, or before merging to verify work meets requirements |
 | [`/review-gstack`](./.kiro/skills/review-gstack/SKILL.md) | Pre-landing PR review. (gstack) |
 
-## 🧪 05 — Testing y QA (12)
+## 🧪 05 — Testing y QA (13)
 
 | Comando | Qué hace |
 |---------|----------|
@@ -91,6 +96,7 @@
 | [`/debugging-and-error-recovery`](./.kiro/skills/debugging-and-error-recovery/SKILL.md) | Guides systematic root-cause debugging. Use when tests fail, builds break, behavior doesn't match expectations, or you encounter any unexpected error. Use… |
 | [`/investigate`](./.kiro/skills/investigate/SKILL.md) | Systematic debugging with root cause investigation. (gstack) |
 | [`/performance-optimization`](./.kiro/skills/performance-optimization/SKILL.md) | Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance… |
+| [`/playwright-cli`](./.kiro/skills/playwright-cli/SKILL.md) | Automate browser interactions, test web pages and work with Playwright tests. |
 | [`/qa`](./.kiro/skills/qa/SKILL.md) | Systematically QA test a web application and fix bugs found. (gstack) |
 | [`/qa-only`](./.kiro/skills/qa-only/SKILL.md) | Report-only QA testing. (gstack) |
 | [`/qaskill`](./.kiro/skills/qaskill/SKILL.md) | Sistema de QA inteligente que registra, categoriza y aprende de cada error cometido durante el desarrollo. Antes de ejecutar cualquier cambio, consulta el… |

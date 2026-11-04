@@ -1,10 +1,10 @@
 # ✅ Usar tus skills en cualquier chat de Kiro
 
 Tus skills ya están empaquetadas en la carpeta **`.kiro/skills/`** de este repositorio:
-**140 skills**, cada una en su propia carpeta, en el formato que exige Kiro.
+**146 skills**, cada una en su propia carpeta, en el formato que exige Kiro.
 El índice con todas está en [CATALOGO-KIRO.md](./CATALOGO-KIRO.md).
 
-> ¿Por qué 140 y no 118? El conteo oficial (118) toma las skills "paraguas" como una sola,
+> ¿Por qué 146 y no 118? El conteo oficial (118) toma las skills "paraguas" como una sola,
 > por ejemplo Strix o el Motor de Videos. Kiro necesita cada sub-skill por separado, así que aquí aparecen todas.
 
 ## Opción A — Chats sobre este repo (automático)
@@ -29,7 +29,7 @@ El último comando (`open .kiro`) abre una ventana de Finder. Adentro verás la 
 3. Revisa la lista. Todas deberían aparecer como **New**.
 4. Presiona **Upload N files**.
 
-**3. Comprueba que quedaron:** en **Settings → Skills** deberías ver las 140.
+**3. Comprueba que quedaron:** en **Settings → Skills** deberías ver las 146.
 
 Desde ese momento, todos los chats nuevos de Kiro Web las tienen disponibles.
 Si quieres usarlas también en Kiro en tu computador, activa en la misma página

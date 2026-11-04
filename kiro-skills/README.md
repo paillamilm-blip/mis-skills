@@ -100,3 +100,14 @@ cp -r mis-skills/kiro-skills/03-diseno/impeccable/ mi-proyecto/.kiro/skills/
 | Propias | [@paillamilm-blip](https://github.com/paillamilm-blip) | 29 | Personal |
 | [agent-skills](https://github.com/addyosmani/agent-skills) | Addy Osmani (Google) | 24 | MIT |
 | [gstack](https://github.com/garrytan/gstack) | Garry Tan (Y Combinator) | 33 | MIT |
+
+## Agregadas (nov 2026)
+
+| Skill | Segmento | Origen |
+|-------|----------|--------|
+| `archify` | 03-diseno | [tt-a1i/archify](https://github.com/tt-a1i/archify) (sin la carpeta `examples/`) |
+| `design-taste-frontend` (taste-skill v2) | 03-diseno | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) — convive con el `taste-skill` antiguo |
+| `web-design-guidelines` | 03-diseno | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
+| `image-to-code` | 03-diseno | [Leonxlnx/imagegen-skills](https://github.com/Leonxlnx/imagegen-skills) (movida desde taste-skill) |
+| `awesome-design-md` | 03-diseno | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) (empaquetada como skill) |
+| `playwright-cli` | 05-testing-qa | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) |
