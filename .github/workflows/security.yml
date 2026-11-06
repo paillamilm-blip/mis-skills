@@ -1,0 +1,65 @@
+name: Security Scan
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  strix-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # necesario para que Strix escanee solo los archivos cambiados del PR
+
+      # Los PRs desde forks no reciben secrets: en ese caso se omite el escaneo en vez de fallar.
+      - name: Check secrets
+        id: secrets
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          STRIX_LLM: ${{ secrets.STRIX_LLM }}
+        run: |
+          if [ -z "$LLM_API_KEY" ] || [ -z "$STRIX_LLM" ]; then
+            echo "::warning::Faltan los secrets STRIX_LLM y/o LLM_API_KEY; se omite el escaneo de Strix."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Strix
+        if: steps.secrets.outputs.ok == 'true'
+        run: curl -sSL https://strix.ai/install | bash   # instala en ~/.strix/bin y lo agrega a $GITHUB_PATH
+
+      - name: Run Security Scan
+        if: steps.secrets.outputs.ok == 'true'
+        env:
+          STRIX_LLM: ${{ secrets.STRIX_LLM }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: >
+          strix -n -t ./
+          --scan-mode quick
+          --scope-mode diff
+          --diff-base "origin/${{ github.base_ref }}"
+          --max-budget 10
+
+      # No fallar "en abierto": si se agota el presupuesto, Strix sale con 0
+      # pero deja run.json con status "stopped" en vez de "completed".
+      - name: Fail unless the scan completed
+        if: steps.secrets.outputs.ok == 'true'
+        run: |
+          run_json=$(ls -t strix_runs/*/run.json | head -1)
+          status=$(jq -r .status "$run_json")
+          if [ "$status" != "completed" ]; then
+            echo "Strix run status is '$status' — el escaneo no terminó (probablemente se agotó el presupuesto). Sube --max-budget." >&2
+            exit 1
+          fi
+
+      - name: Upload Strix report
+        if: always() && steps.secrets.outputs.ok == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: strix-report
+          path: strix_runs/
+          if-no-files-found: ignore
