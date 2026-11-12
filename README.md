@@ -17,6 +17,7 @@
 | [🧠 kiro-skills/](./kiro-skills/) | **118 skills de IA** organizadas en 12 segmentos (fuente, para editar) |
 | `.kiro/skills/` | **Paquete listo para Kiro**: 140 skills planas (generado, no editar a mano) |
 | [📇 CATALOGO-KIRO.md](./CATALOGO-KIRO.md) | Índice de las 147 skills con su comando `/nombre` |
+| [🗂️ GUIA-SKILLS-ES.md](./GUIA-SKILLS-ES.md) | Las 147 skills explicadas en español simple |
 | [✅ INSTALAR-EN-KIRO.md](./INSTALAR-EN-KIRO.md) | Cómo usarlas en **todos** tus chats de Kiro |
 | [📝 templates/](./templates/) | Plantillas para agregar nuevas skills |
 
@@ -45,6 +46,7 @@
 
 ### 📚 Guías rápidas:
 - [✅ INSTALAR EN KIRO](./INSTALAR-EN-KIRO.md) — Dejarlas disponibles en todos tus chats (1 vez)
+- [🗂️ GUÍA EN ESPAÑOL](./GUIA-SKILLS-ES.md) — Las 147 skills y para qué sirve cada una, en palabras simples
 - [📇 CATÁLOGO](./CATALOGO-KIRO.md) — Las 147 skills con su comando `/nombre`
 - [⚡ COMANDOS](./kiro-skills/COMANDOS.md) — Qué decirle al agente para activar cada skill
 - [🔥 COMBINACIONES](./kiro-skills/COMBINACIONES.md) — Los mejores combos por situación
